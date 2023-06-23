@@ -15,32 +15,24 @@ public class CollectibleDisplayer : MonoBehaviour
         itemInfo = info;
         menuTitle = title;
         menuDesc = desc;
-    }
-    public void DisplayObject()
-    {
+
         if (!itemInfo.collected)
-            gameObject.transform.GetChild(1).GetComponent<Image>().sprite = itemInfo.lockedImage.sprite; 
+            gameObject.transform.GetChild(0).GetComponent<Image>().sprite = itemInfo.lockedImage;
+
         else
-            gameObject.transform.GetChild(1).GetComponent<Image>().sprite = itemInfo.unlockedImage.sprite;
+            gameObject.transform.GetChild(0).GetComponent<Image>().sprite = itemInfo.unlockedImage;
     }
-    public void HighlightObject(bool isHighlight)
+    public void HighLightText()
     {
-        if (isHighlight)
-            HighLightText(true);
-        else
-            HighLightText(false);
-    }
-    private void HighLightText(bool isHighlight)
-    {
-        if (isHighlight)
+        if (itemInfo.collected)
         {
             menuTitle.text = itemInfo.itemName;
             menuDesc.text = itemInfo.itemDesc;
         }
         else
         {
-            menuTitle.text = "";
-            menuDesc.text = "";
+            menuTitle.text = "???";
+            menuDesc.text = "?????????";
         }
     }
 }

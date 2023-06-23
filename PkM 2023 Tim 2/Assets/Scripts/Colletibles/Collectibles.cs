@@ -10,6 +10,6 @@ public class Collectibles
     public string itemName;
     public string itemDesc;
     public bool collected;
-    public Image lockedImage;
-    public Image unlockedImage;
+    public Sprite lockedImage;
+    public Sprite unlockedImage;
 }
