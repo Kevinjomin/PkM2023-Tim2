@@ -5,7 +5,7 @@
 23/06/2023
 - player movement (WASD)
 - top down camera follow player
-
+- collider buat player dan map
 
 17/06/2023
 - main menu navigation (play, options, quit, collection, help)
