@@ -42,6 +42,6 @@ public class CollectibleManager : MonoBehaviour
     }
     private void DisplayCollectibles()
     {
-        compendium.ShowCollectible(collectibles);
+        compendium.InitializeCollectible(collectibles);
     }
 }
