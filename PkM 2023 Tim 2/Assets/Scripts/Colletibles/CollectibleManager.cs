@@ -27,17 +27,18 @@ public class CollectibleManager : MonoBehaviour
 
         scene = SceneManager.GetActiveScene();
     }
-
     private void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (!string.Equals(scene.path, this.scene.path))
-            return;
-
-        compendium = GameObject.Find("Compendium").GetComponent<Compendium>();
+        Debug.Log("Loaded a New Scene");
+        if (compendium == null)
+        {
+            compendium = GameObject.Find("Compendium").GetComponent<Compendium>();
+        }
         DisplayCollectibles();
     }
     private void DisplayCollectibles()
