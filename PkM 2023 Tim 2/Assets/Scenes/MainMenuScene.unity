@@ -5367,7 +5367,7 @@ MonoBehaviour:
   - id: 2
     itemName: Junk
     itemDesc: Useless Stuff
-    collected: 0
+    collected: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
   - id: 3
@@ -5397,7 +5397,7 @@ MonoBehaviour:
   - id: 3
     itemName: Waste
     itemDesc: Not For Consumption
-    collected: 1
+    collected: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
   - id: 3
@@ -5433,7 +5433,7 @@ MonoBehaviour:
   - id: 3
     itemName: Waste
     itemDesc: Not For Consumption
-    collected: 1
+    collected: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
   - id: 3
