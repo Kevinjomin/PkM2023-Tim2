@@ -16,16 +16,20 @@ public class CollectibleManager : MonoBehaviour
 
     private void Awake()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded; // Make Sure there's only one listener
-        SceneManager.sceneLoaded += OnSceneLoaded;
-
-        DontDestroyOnLoad(gameObject);
         if (instance == null)
             instance = this;
         else
-            Destroy(gameObject);
+            Destroy(this.gameObject);
 
-        scene = SceneManager.GetActiveScene();
+        if (instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded; // Make Sure there's only one listener
+            SceneManager.sceneLoaded += OnSceneLoaded;
+
+            DontDestroyOnLoad(gameObject);
+
+            scene = SceneManager.GetActiveScene();
+        }
     }
     private void OnDestroy()
     {
@@ -44,5 +48,19 @@ public class CollectibleManager : MonoBehaviour
     private void DisplayCollectibles()
     {
         compendium.InitializeCollectible(collectibles);
+    }
+
+    public Collectibles FindByID(int id)
+    {
+        Collectibles selected = new Collectibles();
+        for (int i = 0; i < collectibles.Count; i++)
+        {
+            if (id == collectibles[i].id)
+            {
+                selected = collectibles[i];
+                break;
+            }
+        }
+        return selected;
     }
 }
