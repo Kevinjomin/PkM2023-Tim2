@@ -19,10 +19,17 @@ public class TrashSpawner : MonoBehaviour
     {
         for (int i = 0; i < idSelected.Count; i++)
         {
-            Collectibles selectedCollectible = CollectibleManager.instance.FindByID(idSelected[i]);
-            MapObject mapObject = new MapObject(selectedCollectible.id, (int)selectedCollectible.rarity);
+            Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
+            MapObject mapObject = new MapObject(selectedCollectible.id, (int)selectedCollectible.rarity, selectedCollectible.mapObject);
+
             selectedMapObject.Add(mapObject);
         }
-
+    }
+    public void UpdateCompendium()
+    {
+        for (int i = 0; i < collectedObject.Count; i++)
+        {
+            CollectibleManager.instance.SetByID(collectedObject[i].id);
+        }
     }
 }

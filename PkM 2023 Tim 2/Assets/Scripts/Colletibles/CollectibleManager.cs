@@ -50,17 +50,25 @@ public class CollectibleManager : MonoBehaviour
         compendium.InitializeCollectible(collectibles);
     }
 
-    public Collectibles FindByID(int id)
+    public Collectibles GetByID(int id)
     {
-        Collectibles selected = new Collectibles();
         for (int i = 0; i < collectibles.Count; i++)
         {
             if (id == collectibles[i].id)
             {
-                selected = collectibles[i];
-                break;
+               return collectibles[i];
             }
         }
-        return selected;
+        return null;
+    }
+    public void SetByID(int id)
+    {
+        for (int i = 0; i < collectibles.Count; i++)
+        {
+            if (id == collectibles[i].id)
+            {
+                collectibles[i].collected = true;
+            }
+        }
     }
 }

@@ -5374,7 +5374,7 @@ MonoBehaviour:
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-    collected: 1
+    collected: 0
     mapObject: {fileID: 0}
   - id: 3
     itemName: Electornic (Common)
@@ -5383,7 +5383,7 @@ MonoBehaviour:
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
-    collected: 1
+    collected: 0
     mapObject: {fileID: 0}
   compendium: {fileID: 0}
 --- !u!4 &1563116359

@@ -6,6 +6,7 @@ public class MapObject : MonoBehaviour
 {
     public int id;
     public int rarityInt;
+    public GameObject spawnObject;
     public enum Rarity
     {
         COMMON,
@@ -14,15 +15,11 @@ public class MapObject : MonoBehaviour
     }
     public Rarity rarity;
 
-    public bool collected;
-    public MapObject(int id, int rarityInt)
+    public MapObject(int id, int rarityInt, GameObject spawnObject)
     {
         this.id = id;
         this.rarityInt = rarityInt;
+        this.spawnObject = spawnObject;
         rarity = (Rarity)rarityInt;
-    }
-    public void SetCollected(bool collected)
-    {
-        this.collected = collected;
     }
 }
