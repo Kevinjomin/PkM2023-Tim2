@@ -213,11 +213,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2134385038}
-<<<<<<< Updated upstream
   - {fileID: 144929298}
-=======
-  - {fileID: 375127274}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -795,7 +791,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-<<<<<<< Updated upstream
 --- !u!1001 &323031583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -918,57 +913,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
-=======
---- !u!1 &375127273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 375127274}
-  - component: {fileID: 375127275}
-  m_Layer: 0
-  m_Name: Trash Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &375127274
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375127273}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 57115547}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &375127275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375127273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c54d2335ec6fcb549ab8c2f012846ab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawner:
-  - {fileID: 0}
-  idSelected: 
-  selectedMapObject: []
-  collectedObject: []
->>>>>>> Stashed changes
 --- !u!1 &407664757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,11 +2773,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
-=======
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333983, z: -0.0000000029623664, w: 0.9058261}
->>>>>>> Stashed changes
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5326,11 +5266,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962208872}
-<<<<<<< Updated upstream
   m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
-=======
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333983, z: -0.0000000029623664, w: 0.9058261}
->>>>>>> Stashed changes
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
