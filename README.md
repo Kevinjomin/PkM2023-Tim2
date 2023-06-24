@@ -3,6 +3,7 @@
 **Changelogs**
 24/06/2023
 - player bisa pick up object
+- player bisa buang object ke tempat sampah (kalau jenisnya benar, score bertambah)
 - ada minimap
 
 23/06/2023
