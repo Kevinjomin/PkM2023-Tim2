@@ -5,9 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7f;
+    [SerializeField] private float pickupRange = 2f;
+    [SerializeField] private GameObject holdItemContainer;
 
     private void Update()
     {
+        pickupObject();
+     /*   if (Input.GetKeyDown(KeyCode.F))
+        {
+            Debug.Log("test");
+            pickupObject();
+        }
+*/
         Vector2 inputVector = new Vector2(0, 0);
 
         if (Input.GetKey(KeyCode.W))
@@ -67,5 +76,43 @@ public class Player : MonoBehaviour
         // rotate animation
         float rotateSpeed = 8f;
         transform.forward = Vector3.Slerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
+    }
+
+    private void pickupObject()
+    {
+        
+        Collider[] colliders = Physics.OverlapSphere(transform.position, pickupRange);
+        PickableObject nearestPickable = null;
+        float nearestDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
+        {
+            
+            PickableObject pickable = collider.GetComponent<PickableObject>();
+            // if there is a pickable object
+            if (pickable != null)
+            {
+                float distance = Vector3.Distance(transform.position, collider.transform.position);
+                // only select the nearest object if there are multiple pickable object
+                if(distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearestPickable = pickable;
+                }
+            }
+        }
+        if(nearestPickable != null)
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                nearestPickable.PickUp(holdItemContainer.transform);
+            }
+        }
+    }
+
+    private void OnDrawGizmos() //to see pickup range
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, pickupRange);
     }
 }
