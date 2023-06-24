@@ -20,7 +20,7 @@ public class TrashSpawner : MonoBehaviour
         for (int i = 0; i < idSelected.Count; i++)
         {
             Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
-            MapObject mapObject = new MapObject(selectedCollectible.id, (int)selectedCollectible.rarity, selectedCollectible.mapObject);
+            MapObject mapObject = new MapObject(selectedCollectible.id, (int)selectedCollectible.rarity, selectedCollectible.mapObject, this);
 
             selectedMapObject.Add(mapObject);
         }

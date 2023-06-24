@@ -7,6 +7,7 @@ public class MapObject : MonoBehaviour
     public int id;
     public int rarityInt;
     public GameObject spawnObject;
+    public TrashSpawner manager;
     public enum Rarity
     {
         COMMON,
@@ -15,11 +16,16 @@ public class MapObject : MonoBehaviour
     }
     public Rarity rarity;
 
-    public MapObject(int id, int rarityInt, GameObject spawnObject)
+    public MapObject(int id, int rarityInt, GameObject spawnObject, TrashSpawner manager)
     {
         this.id = id;
         this.rarityInt = rarityInt;
         this.spawnObject = spawnObject;
         rarity = (Rarity)rarityInt;
+        this.manager = manager;
+    }
+    public void UpdateCollected()
+    {
+        manager.collectedObject.Add(this);
     }
 }
