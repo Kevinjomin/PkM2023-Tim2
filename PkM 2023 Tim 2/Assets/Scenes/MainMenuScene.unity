@@ -5359,119 +5359,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibles:
   - id: 1
-    itemName: Trash
+    itemName: Organic (Common)
     itemDesc: Very Stinky
-    collected: 1
+    rarity: 0
+    type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
-  - id: 2
-    itemName: Junk
-    itemDesc: Useless Stuff
     collected: 1
+    mapObject: {fileID: 0}
+  - id: 2
+    itemName: Inorganic (Common)
+    itemDesc: Not For Consumption
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 1
+    mapObject: {fileID: 0}
+  - id: 3
+    itemName: Electornic (Common)
+    itemDesc: Useless Stuff
+    rarity: 0
+    type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
     collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
-  - id: 3
-    itemName: Waste
-    itemDesc: Not For Consumption
-    collected: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    mapObject: {fileID: 0}
   compendium: {fileID: 0}
 --- !u!4 &1563116359
 Transform:
