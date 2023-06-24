@@ -216,7 +216,7 @@ Transform:
   - {fileID: 144929298}
   - {fileID: 1454905343}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &75619620
 GameObject:
@@ -923,6 +923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 346005621}
+  - component: {fileID: 346005622}
   m_Layer: 0
   m_Name: Spawners
   m_TagString: Untagged
@@ -937,14 +938,30 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346005620}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9454417, y: 4.390781, z: -4.9861307}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.8531423, y: 0.834095, z: 14.739744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1212190428}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &346005622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346005620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefc27331c1730048a87259c130bd0e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idSelected: 0200000003000000
+  spawnLimit: 5
+  radius: 5
+  selectedMapObject: []
 --- !u!1 &407664757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1499,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &533766964
 GameObject:
@@ -1656,7 +1673,7 @@ Transform:
   - {fileID: 1023054599}
   - {fileID: 1673763078}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622347658
 GameObject:
@@ -2197,7 +2214,7 @@ RectTransform:
   - {fileID: 1595794911}
   - {fileID: 1838242930}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2324,7 +2341,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &759481926 stripped
 Transform:
@@ -2817,7 +2834,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3082,6 +3099,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08b62609b31a2f54ebe3d1ddb0e2e619, type: 3}
+--- !u!1 &1212190427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1212190428}
+  m_Layer: 0
+  m_Name: Compendium Testing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1212190428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212190427}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8531423, y: -0.834095, z: 1.5502567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 346005621}
+  - {fileID: 1362489620068760508}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1287058661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3581,7 +3631,7 @@ Transform:
   - {fileID: 1962208874}
   - {fileID: 1853112780}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375738583
 GameObject:
@@ -3616,7 +3666,7 @@ Transform:
   - {fileID: 651452615}
   - {fileID: 1000628833}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1375738585
 MonoBehaviour:
@@ -4023,9 +4073,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d2335ec6fcb549ab8c2f012846ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner: []
-  idSelected: 
-  selectedMapObject: []
+  spawner:
+  - {fileID: 346005622}
   collectedObject: []
 --- !u!4 &1459928615 stripped
 Transform:
@@ -5358,7 +5407,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962208872}
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5773,13 +5822,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737303985677230622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.085708, y: 0.47956014, z: -2.7223005}
+  m_LocalPosition: {x: -11.93885, y: 1.3136551, z: -4.2725573}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1791748723418438968}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 1212190428}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1791748723418438968
 Transform:
@@ -5960,11 +6009,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 737303985677230622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2884bfc7922f2e94e987a1cd57f511d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 684fbc18e21dea643b7ca06e0aaf252c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
-  rarityInt: 0
-  spawnObject: {fileID: 0}
-  manager: {fileID: 1454905344}
-  rarity: 0
+  data:
+    id: 2
+    rarityInt: 0
+    spawnObject: {fileID: 0}
+    manager: {fileID: 1454905344}
+    rarity: 0

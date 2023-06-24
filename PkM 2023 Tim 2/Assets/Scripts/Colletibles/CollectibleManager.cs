@@ -38,7 +38,6 @@ public class CollectibleManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("Loaded a New Scene");
         if (compendium == null)
         {
             compendium = GameObject.Find("Compendium").GetComponent<Compendium>();

@@ -4,12 +4,28 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    List<MapObject> ObjectPool = new List<MapObject>();
-    private bool spawned; 
-    private void SpawnObject(MapObject chosenObject)
+    [SerializeField] private List<int> idSelected = new List<int>();
+
+    [SerializeField] private int spawnLimit;
+    [SerializeField] private float radius;
+
+    [Header("DONT USE THIS, ONLY FOR TESTING")]
+    [SerializeField] private List<SpawnData> selectedMapObject = new List<SpawnData>();
+
+    public void InitializeSpawner(SpawnManager manager)
+    {
+        for (int i = 0; i < idSelected.Count; i++)
+        {
+            Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
+            SpawnData mapObject = new SpawnData(selectedCollectible.id, (int)selectedCollectible.rarity, selectedCollectible.mapObject, manager);
+
+            selectedMapObject.Add(mapObject);
+        }
+    }
+    private void SpawnObject(SpawnData chosenObject)
     {
         Instantiate(chosenObject.spawnObject, this.transform);
-        spawned = true;
+        spawnLimit++;
     }
     public void ChooseObject()
     {

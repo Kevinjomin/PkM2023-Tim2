@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapObject : MonoBehaviour
+[System.Serializable]
+public class SpawnData
 {
     public int id;
     public int rarityInt;
     public GameObject spawnObject;
-    public TrashSpawner manager;
+    public SpawnManager manager;
     public enum Rarity
     {
         COMMON,
@@ -16,7 +17,7 @@ public class MapObject : MonoBehaviour
     }
     public Rarity rarity;
 
-    public MapObject(int id, int rarityInt, GameObject spawnObject, TrashSpawner manager)
+    public SpawnData(int id, int rarityInt, GameObject spawnObject, SpawnManager manager)
     {
         this.id = id;
         this.rarityInt = rarityInt;

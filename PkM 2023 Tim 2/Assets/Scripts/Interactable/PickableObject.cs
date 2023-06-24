@@ -41,7 +41,7 @@ public class PickableObject : MonoBehaviour
         scoreSystem.addScore(ScoreValue);
         Destroy(gameObject);
 
-        this.GetComponent<MapObject>().UpdateCollected();
+        this.GetComponent<SpawnObject>().data.UpdateCollected();
     }
     public void throwAwayIncorrect()
     {
