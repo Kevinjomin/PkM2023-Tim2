@@ -8,15 +8,26 @@ public class Player : MonoBehaviour
     [SerializeField] private float pickupRange = 2f;
     [SerializeField] private GameObject holdItemContainer;
 
+    private ScoreSystem scoreSystem;
+    private PickableObject heldObject;
+    private bool isHolding = false;
+
     private void Update()
     {
-        pickupObject();
-     /*   if (Input.GetKeyDown(KeyCode.F))
+        inputMovement();
+        if(isHolding == false)
         {
-            Debug.Log("test");
             pickupObject();
         }
-*/
+        else
+        {
+            throwObject();
+        }
+
+    }
+
+    private void inputMovement()
+    {
         Vector2 inputVector = new Vector2(0, 0);
 
         if (Input.GetKey(KeyCode.W))
@@ -43,7 +54,7 @@ public class Player : MonoBehaviour
         float playerRadius = 0.7f;
         float playerHeight = 1f;
         bool canMove = !Physics.CapsuleCast(transform.position, transform.position + Vector3.up * playerHeight, playerRadius, moveDirection, moveDistance);
-        
+
         if (!canMove) // when player cannot move
         {
             // attempt movement on x axis
@@ -101,11 +112,59 @@ public class Player : MonoBehaviour
                 }
             }
         }
+
         if(nearestPickable != null)
         {
+            //highlight nearest object
+            nearestPickable.HighlightVisual.SetActive(true);
             if (Input.GetKeyDown(KeyCode.F))
             {
+                isHolding = true;
                 nearestPickable.PickUp(holdItemContainer.transform);
+                heldObject = nearestPickable;
+            }
+        }
+    }
+
+    private void throwObject()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, pickupRange);
+        TrashCanObject nearestTrashCan = null;
+        float nearestDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
+        {
+
+            TrashCanObject trashCan = collider.GetComponent<TrashCanObject>();
+            // if there is a pickable object
+            if (trashCan != null)
+            {
+                float distance = Vector3.Distance(transform.position, collider.transform.position);
+                // only select the nearest object if there are multiple pickable object
+                if (distance < nearestDistance)
+                {
+                    nearestDistance = distance;
+                    nearestTrashCan = trashCan;
+                }
+            }
+        }
+
+        if (nearestTrashCan != null)
+        {
+            //highlight nearest trash can
+            nearestTrashCan.HighlightVisual.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                isHolding = false;
+                if(heldObject.typeIndex == nearestTrashCan.typeIndex)
+                {
+                    heldObject.throwAwayCorrect();
+                }
+                else
+                {
+                    heldObject.throwAwayIncorrect();
+                }
+                
             }
         }
     }
