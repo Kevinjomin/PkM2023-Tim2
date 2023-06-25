@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8750523681420963448}
   - component: {fileID: -367540838650777645}
   m_Layer: 0
-  m_Name: Rare (Electronic)
+  m_Name: Electronic (Common)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -118,7 +118,7 @@ Transform:
   m_Children:
   - {fileID: 5288803481325833377}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2868826676635499063
 MeshFilter:
@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
     id: 0
+    name: 
     spawnObject: {fileID: 0}
     manager: {fileID: 0}
     rarity: 0

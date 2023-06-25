@@ -11,8 +11,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float radius;
 
     [Header("Common Percentage = 100 - (Rare + Uncommon)")]
-    [SerializeField] private int uncommonPercentage;
-    [SerializeField] private int rarePercentage;
+    [SerializeField] private float uncommonPercentage;
+    [SerializeField] private float rarePercentage;
 
     [Header("DONT USE THIS, ONLY FOR TESTING")]
     [SerializeField] private List<SpawnData> commonObject = new List<SpawnData>();
@@ -20,20 +20,57 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<SpawnData> rareObject = new List<SpawnData>();
     [SerializeField] private GameObject spawnParent;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
+            ChooseObject();
+    }
     public void InitializeSpawner(SpawnManager manager)
     {
         for (int i = 0; i < idSelected.Count; i++)
         {
             Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
-            SpawnData mapObject = new SpawnData(selectedCollectible.id, (int)selectedCollectible.rarity, selectedCollectible.mapObject, manager);
+            SpawnData mapObject = new SpawnData(selectedCollectible.id, selectedCollectible.itemName, (int)selectedCollectible.rarity, selectedCollectible.mapObject, manager);
 
             SortItem(mapObject);
         }
+        if (idSelected.Count <= 0)
+            DeactivateSpawner();
+
+        InitializeChances();
     }
-    private void Update()
+
+    private void DeactivateSpawner()
     {
-        if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
-            ChooseObject();
+        Debug.Log("There's no item that can be spawned in " + this.gameObject.name);
+        this.gameObject.SetActive(false);
+    }
+    private void InitializeChances()
+    {
+        float commonPercentage = 100 - (uncommonPercentage + rarePercentage);
+        if (commonObject.Count <= 0)
+        {
+            uncommonPercentage += commonPercentage / 2;
+            rarePercentage += commonPercentage / 2;
+            if (uncommonObject.Count <= 0)
+            {
+                rarePercentage += uncommonPercentage;
+                uncommonPercentage = 0;
+            }
+                
+            if (rareObject.Count <= 0)
+            {
+                uncommonPercentage += rarePercentage;
+                rarePercentage = 0;
+            }     
+        }
+        else
+        {
+            if (uncommonObject.Count <= 0)
+                uncommonPercentage = 0;
+            if (rareObject.Count <= 0)
+                rarePercentage = 0;
+        }
     }
     private void SortItem(SpawnData mapObject)
     {
@@ -73,10 +110,10 @@ public class Spawner : MonoBehaviour
     }
     public void ChooseObject() // Public for testing
     {
-        int chance = Random.Range(0, 100);
-        if (chance <= uncommonPercentage)
+        float chance = Random.Range(0, 100);
+        if (chance < uncommonPercentage)
         {
-            if (chance <= rarePercentage)
+            if (chance < rarePercentage)
                 ChooseFromList(rareObject);
             else
                 ChooseFromList(uncommonObject);
@@ -84,12 +121,13 @@ public class Spawner : MonoBehaviour
         else
             ChooseFromList(commonObject);
     }
+
     private void ChooseFromList(List<SpawnData> list)
     {
         if (list.Count == 0)
             ChooseObject();
 
-        int chance = Random.Range(0, list.Count - 1);
+        int chance = Random.Range(0, list.Count);
         SpawnObject(list[chance]);
     }
 }

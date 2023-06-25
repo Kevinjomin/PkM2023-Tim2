@@ -6,6 +6,7 @@ using UnityEngine;
 public class SpawnData
 {
     public int id;
+    public string name;
     public GameObject spawnObject;
     public SpawnManager manager;
 
@@ -20,9 +21,10 @@ public class SpawnData
     [Header("USED TO INPUT RARITY ENUM")]
     public int rarityInt;
 
-    public SpawnData(int id, int rarityInt, GameObject spawnObject, SpawnManager manager)
+    public SpawnData(int id, string name, int rarityInt, GameObject spawnObject, SpawnManager manager)
     {
         this.id = id;
+        this.name = name;
         this.rarityInt = rarityInt;
         this.spawnObject = spawnObject;
         rarity = (Rarity)rarityInt;

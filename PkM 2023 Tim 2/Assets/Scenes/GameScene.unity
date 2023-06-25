@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 346005621}
   - component: {fileID: 346005622}
   m_Layer: 0
-  m_Name: Spawners
+  m_Name: Test Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -990,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eefc27331c1730048a87259c130bd0e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idSelected: 010000000400000005000000
+  idSelected: 0100000002000000030000000400000005000000
   spawnLimit: 100
   spawnCooldown: 5
   radius: 5
