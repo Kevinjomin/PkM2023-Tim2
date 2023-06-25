@@ -18,6 +18,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<SpawnData> commonObject = new List<SpawnData>();
     [SerializeField] private List<SpawnData> uncommonObject = new List<SpawnData>();
     [SerializeField] private List<SpawnData> rareObject = new List<SpawnData>();
+    [SerializeField] private GameObject spawnParent;
 
     public void InitializeSpawner(SpawnManager manager)
     {
@@ -59,8 +60,13 @@ public class Spawner : MonoBehaviour
         if (spawnLimit <= 0)
             return;
 
-        GameObject newObject =  Instantiate(chosenObject.spawnObject, this.transform);
+        float randomX = Random.Range(0, radius);
+        float randomZ = Random.Range(0, radius);
+
+        GameObject newObject =  Instantiate(chosenObject.spawnObject, spawnParent.transform);
+        newObject.transform.localPosition = new Vector3(randomX, 0, randomZ);
         newObject.GetComponent<SpawnObject>().data = chosenObject;
+
         Debug.Log("Spawning " + newObject.GetComponent<SpawnObject>().data.rarity + " Object");
 
         spawnLimit--;
