@@ -5366,7 +5366,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 1
-    mapObject: {fileID: 0}
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
   - id: 2
     itemName: Inorganic (Common)
     itemDesc: Not For Consumption
@@ -5386,23 +5386,23 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 0}
   - id: 4
-    itemName: Organic (Uncommon)
+    itemName: Inorganic (Uncommon)
     itemDesc: Useless Stuff
     rarity: 1
-    type: 0
+    type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 0}
+    mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
   - id: 5
-    itemName: Organic (Rare)
+    itemName: Electronic (Rare)
     itemDesc: Useless Stuff
     rarity: 2
-    type: 0
+    type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 0}
+    mapObject: {fileID: 6594225706700272519, guid: c1a950afb46980841bd64453c7460f53, type: 3}
   compendium: {fileID: 0}
 --- !u!4 &1563116359
 Transform:

@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8750523681420963448}
   - component: {fileID: 2924519850346814852}
   m_Layer: 0
-  m_Name: Trash (non-organic)
+  m_Name: Uncommon (Inroganic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

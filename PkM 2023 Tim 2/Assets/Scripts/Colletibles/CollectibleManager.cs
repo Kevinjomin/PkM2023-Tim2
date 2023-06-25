@@ -40,7 +40,15 @@ public class CollectibleManager : MonoBehaviour
     {
         if (compendium == null)
         {
-            compendium = GameObject.Find("Compendium").GetComponent<Compendium>();
+            try
+            {
+                compendium = GameObject.Find("Compendium").GetComponent<Compendium>();
+            }
+            catch
+            {
+                Debug.Log("No Compendium (On Loading Scene)");
+                return;
+            }
         }
         DisplayCollectibles();
     }

@@ -11,11 +11,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private float radius;
 
     [Header("Common Percentage = 100 - (Rare + Uncommon)")]
-    [Range(0, 100)]
     [SerializeField] private int uncommonPercentage;
-    [Range(0,100)]
     [SerializeField] private int rarePercentage;
-
 
     [Header("DONT USE THIS, ONLY FOR TESTING")]
     [SerializeField] private List<SpawnData> commonObject = new List<SpawnData>();
@@ -31,6 +28,11 @@ public class Spawner : MonoBehaviour
 
             SortItem(mapObject);
         }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
+            ChooseObject();
     }
     private void SortItem(SpawnData mapObject)
     {
@@ -49,38 +51,39 @@ public class Spawner : MonoBehaviour
     }
     public IEnumerator SpawnTimer() // To spawn, this should run first
     {
-        if (spawnLimit <= 0)
-            yield return null;
-
         yield return new WaitForSeconds(spawnCooldown);
         ChooseObject();
     }
     public void SpawnObject(SpawnData chosenObject) // Public for testing
     {
+        if (spawnLimit <= 0)
+            return;
+
         GameObject newObject =  Instantiate(chosenObject.spawnObject, this.transform);
         newObject.GetComponent<SpawnObject>().data = chosenObject;
+        Debug.Log("Spawning " + newObject.GetComponent<SpawnObject>().data.rarity + " Object");
 
         spawnLimit--;
     }
-    public SpawnData ChooseObject() // Public for testing
+    public void ChooseObject() // Public for testing
     {
         int chance = Random.Range(0, 100);
         if (chance <= uncommonPercentage)
         {
             if (chance <= rarePercentage)
-                return ChooseFromList(rareObject);
+                ChooseFromList(rareObject);
             else
-                return ChooseFromList(uncommonObject);
+                ChooseFromList(uncommonObject);
         }
         else
-            return ChooseFromList(commonObject);
+            ChooseFromList(commonObject);
     }
-    private SpawnData ChooseFromList(List<SpawnData> list)
+    private void ChooseFromList(List<SpawnData> list)
     {
         if (list.Count == 0)
             ChooseObject();
 
         int chance = Random.Range(0, list.Count - 1);
-        return list[chance];
+        SpawnObject(list[chance]);
     }
 }
