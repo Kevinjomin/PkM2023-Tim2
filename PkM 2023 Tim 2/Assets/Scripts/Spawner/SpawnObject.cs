@@ -5,5 +5,4 @@ using UnityEngine;
 public class SpawnObject : MonoBehaviour
 {
     public SpawnData data;
-
 }

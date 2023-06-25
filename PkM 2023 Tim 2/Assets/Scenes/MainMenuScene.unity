@@ -5385,6 +5385,24 @@ MonoBehaviour:
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 0}
+  - id: 4
+    itemName: Organic (Uncommon)
+    itemDesc: Useless Stuff
+    rarity: 1
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 0}
+  - id: 5
+    itemName: Organic (Rare)
+    itemDesc: Useless Stuff
+    rarity: 2
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 0}
   compendium: {fileID: 0}
 --- !u!4 &1563116359
 Transform:

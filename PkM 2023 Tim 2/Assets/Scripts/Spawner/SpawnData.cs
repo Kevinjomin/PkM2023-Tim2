@@ -6,9 +6,9 @@ using UnityEngine;
 public class SpawnData
 {
     public int id;
-    public int rarityInt;
     public GameObject spawnObject;
     public SpawnManager manager;
+
     public enum Rarity
     {
         COMMON,
@@ -16,6 +16,9 @@ public class SpawnData
         RARE
     }
     public Rarity rarity;
+
+    [Header("USED TO INPUT RARITY ENUM")]
+    public int rarityInt;
 
     public SpawnData(int id, int rarityInt, GameObject spawnObject, SpawnManager manager)
     {
