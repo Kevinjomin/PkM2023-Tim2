@@ -25,9 +25,17 @@ public class ScoreSystem : MonoBehaviour
     }
     [SerializeField] EndRating endRating;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+            GameEnd();
+    }
     private void Start()
     {
         ui.InitializeUI(oneStar, twoStar, threeStar);
+
+        ui.UpdateLimit(worldTrashLimit);
+        ui.UpdateScore(score);
     }
     public void AddScore()
     {
@@ -65,13 +73,13 @@ public class ScoreSystem : MonoBehaviour
     }
     private void CheckStar()
     {
-        if (score > oneStar)
+        if (score >= oneStar)
         {
             endRating = EndRating.ONE_STAR;
-            if (score > twoStar)
+            if (score >= twoStar)
             {
                 endRating = EndRating.TWO_STAR;
-                if (score > threeStar)
+                if (score >= threeStar)
                     endRating = EndRating.THREE_STAR;
             }
         }

@@ -18,15 +18,20 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<SpawnData> commonObject = new List<SpawnData>();
     [SerializeField] private List<SpawnData> uncommonObject = new List<SpawnData>();
     [SerializeField] private List<SpawnData> rareObject = new List<SpawnData>();
+
     [SerializeField] private GameObject spawnParent;
+
+    [SerializeField] private ScoreSystem scoreSystem;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
             ChooseObject();
     }
-    public void InitializeSpawner(SpawnManager manager)
+    public void InitializeSpawner(SpawnManager manager, ScoreSystem scoreSystem)
     {
+        this.scoreSystem = scoreSystem;
+
         for (int i = 0; i < idSelected.Count; i++)
         {
             Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
@@ -94,7 +99,7 @@ public class Spawner : MonoBehaviour
     }
     public void SpawnObject(SpawnData chosenObject) // Public for testing
     {
-        if (spawnLimit <= 0)
+        if (spawnLimit <= 0 || scoreSystem.worldTrashLimit <= 0) // Should Move to Choose Object
             return;
 
         float randomX = Random.Range(0, radius);
@@ -106,6 +111,7 @@ public class Spawner : MonoBehaviour
 
         Debug.Log("Spawning " + newObject.GetComponent<SpawnObject>().data.rarity + " Object");
 
+        scoreSystem.DecreaseLimit();
         spawnLimit--;
     }
     public void ChooseObject() // Public for testing

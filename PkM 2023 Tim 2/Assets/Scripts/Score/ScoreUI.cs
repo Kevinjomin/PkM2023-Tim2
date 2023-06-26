@@ -27,7 +27,7 @@ public class ScoreUI : MonoBehaviour
     {
         oneStarText.text = "1 Star = " + one + " Trash";
         twoStarText.text = "2 Star = " + two + " Trash";
-        threeStarText.text = "3 Star =" + three + " Trash";
+        threeStarText.text = "3 Star = " + three + " Trash";
     }
     public void UpdateLimit(int limit)
     {
@@ -35,10 +35,10 @@ public class ScoreUI : MonoBehaviour
     }
     public void UpdateScore(int score)
     {
-        scoreCounter.text = "SCORE: " + score;
+        scoreCounter.text = "SCORE : " + score;
     }
     public void GameEnd(string ratingText)
     {
-        WinText.text = ratingText;
+        WinText.text = "RATING : " + ratingText;
     }
 }

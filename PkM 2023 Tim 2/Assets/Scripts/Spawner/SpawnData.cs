@@ -9,6 +9,7 @@ public class SpawnData
     public string name;
     public GameObject spawnObject;
     public SpawnManager manager;
+    public ScoreSystem scoreSystem;
 
     public enum Rarity
     {
@@ -26,8 +27,10 @@ public class SpawnData
         this.id = id;
         this.name = name;
         this.rarityInt = rarityInt;
+
         this.spawnObject = spawnObject;
         rarity = (Rarity)rarityInt;
+
         this.manager = manager;
     }
     public void UpdateCollected()

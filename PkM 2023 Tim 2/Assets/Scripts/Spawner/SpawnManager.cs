@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField] private List<Spawner> spawner = new List<Spawner>();
+    [SerializeField] private ScoreSystem scoreSystem;
 
     public List<SpawnData> collectedObject = new List<SpawnData>();
 
@@ -17,7 +18,7 @@ public class SpawnManager : MonoBehaviour
     {
         for (int i = 0; i < spawner.Count; i++)
         {
-            spawner[i].InitializeSpawner(this);
+            spawner[i].InitializeSpawner(this, scoreSystem);
         }
     }
     public void UpdateCompendium()
