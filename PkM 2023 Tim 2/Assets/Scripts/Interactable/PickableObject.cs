@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickableObject : MonoBehaviour
 {
     [SerializeField] public GameObject HighlightVisual;
-    [SerializeField] public int ScoreValue;
+    //[SerializeField] public int ScoreValue;
     [SerializeField] public int typeIndex;
     /*
     Trash type index :
@@ -38,14 +38,14 @@ public class PickableObject : MonoBehaviour
 
     public void throwAwayCorrect()
     {
-        scoreSystem.addScore(ScoreValue);
+        scoreSystem.AddScore(); //
         Destroy(gameObject);
 
-        this.GetComponent<SpawnObject>().data.UpdateCollected();
+        this.GetComponent<SpawnObject>().data.UpdateCollected(); //
     }
     public void throwAwayIncorrect()
     {
-        scoreSystem.addWrong();
+        //scoreSystem.addWrong();
         Destroy(gameObject);
     }
 }
