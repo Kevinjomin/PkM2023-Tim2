@@ -47,7 +47,25 @@ public class ScoreSystem : MonoBehaviour
     public void EndGame()
     {
         int rating = CheckStar();
-        //ratingUi.DisplayRating()
+        string ratingDescription = RatingDescription();
+
+        ratingUi.DisplayRating(ratingDescription, rating);
+    }
+    private string RatingDescription()
+    {
+        switch(endRating)
+        {
+            case EndRating.FAILURE:
+                return "You've failed";
+            case EndRating.ONE_STAR:
+                return "Nice Job";
+            case EndRating.TWO_STAR:
+                return "Great Work";
+            case EndRating.THREE_STAR:
+                return "Outstanding Performance";
+            default:
+                return "You've finished this level";
+        }
     }
     private int CheckStar()
     {
