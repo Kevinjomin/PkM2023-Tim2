@@ -15,6 +15,7 @@ public class ScoreSystem : MonoBehaviour
     public int score;
 
     [SerializeField] private ScoreUI ui;
+    [SerializeField] private RatingUI ratingUi;
 
     private enum EndRating
     {
@@ -25,11 +26,6 @@ public class ScoreSystem : MonoBehaviour
     }
     [SerializeField] EndRating endRating;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.L))
-            GameEnd();
-    }
     private void Start()
     {
         ui.InitializeUI(oneStar, twoStar, threeStar);
@@ -48,30 +44,12 @@ public class ScoreSystem : MonoBehaviour
         ui.UpdateLimit(worldTrashLimit);
     }
 
-    public void GameEnd()
+    public void EndGame()
     {
-        CheckStar();
-
-        string ratingText = "THERE SHOULD BE A RATING TEXT HERE";
-        switch(endRating)
-        {
-            case EndRating.FAILURE:
-                ratingText = "You've Failed";
-                break;
-            case EndRating.ONE_STAR:
-                ratingText = "1 STAR !!!!!";
-                break;
-            case EndRating.TWO_STAR:
-                ratingText = "2 STAR !!!!!";
-                break;
-            case EndRating.THREE_STAR:
-                ratingText = "3 STAR !!!!!";
-                break;
-        }
-
-        ui.GameEnd(ratingText);
+        int rating = CheckStar();
+        //ratingUi.DisplayRating()
     }
-    private void CheckStar()
+    private int CheckStar()
     {
         if (score >= oneStar)
         {
@@ -85,5 +63,7 @@ public class ScoreSystem : MonoBehaviour
         }
         else
             endRating = EndRating.FAILURE;
+
+        return (int)endRating;
     }
 }
