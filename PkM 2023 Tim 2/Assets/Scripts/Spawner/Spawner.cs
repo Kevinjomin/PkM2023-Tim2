@@ -20,18 +20,19 @@ public class Spawner : MonoBehaviour
     [SerializeField] private List<SpawnData> rareObject = new List<SpawnData>();
 
     [SerializeField] private GameObject spawnParent;
+    [SerializeField] private SpawnManager manager;
 
-    [SerializeField] private ScoreSystem scoreSystem;
+    [HideInInspector] public bool readyToSpawn = true;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
             ChooseObject();
     }
-    public void InitializeSpawner(SpawnManager manager, ScoreSystem scoreSystem)
+    //Initialize Stuff
+    public void InitializeSpawner(SpawnManager manager)
     {
-        this.scoreSystem = scoreSystem;
-
+        this.manager = manager;
         for (int i = 0; i < idSelected.Count; i++)
         {
             Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
@@ -39,16 +40,10 @@ public class Spawner : MonoBehaviour
 
             SortItem(mapObject);
         }
-        if (idSelected.Count <= 0)
+        if (idSelected.Count <= 0 || spawnLimit <= 0)
             DeactivateSpawner();
 
         InitializeChances();
-    }
-
-    private void DeactivateSpawner()
-    {
-        Debug.Log("There's no item that can be spawned in " + this.gameObject.name);
-        this.gameObject.SetActive(false);
     }
     private void InitializeChances()
     {
@@ -92,16 +87,21 @@ public class Spawner : MonoBehaviour
                 break;
         }
     }
-    public IEnumerator SpawnTimer() // To spawn, this should run first
+    private void DeactivateSpawner()
+    {
+        Debug.Log("There's no item that can be spawned in " + this.gameObject.name);
+        this.gameObject.SetActive(false);
+        readyToSpawn = false;
+    }
+
+    //Spawning Stuff
+    private IEnumerator SpawnTimer() // To spawn, this should run first
     {
         yield return new WaitForSeconds(spawnCooldown);
-        ChooseObject();
+        readyToSpawn = true;
     }
     public void SpawnObject(SpawnData chosenObject) // Public for testing
     {
-        if (spawnLimit <= 0 || scoreSystem.worldTrashLimit <= 0) // Should Move to Choose Object
-            return;
-
         float randomX = Random.Range(0, radius);
         float randomZ = Random.Range(0, radius);
 
@@ -111,7 +111,17 @@ public class Spawner : MonoBehaviour
 
         Debug.Log("Spawning " + newObject.GetComponent<SpawnObject>().data.rarity + " Object");
 
-        scoreSystem.DecreaseLimit();
+        AfterSpawn();
+    }
+    private void AfterSpawn()
+    {
+        readyToSpawn = false;
+
+        if (spawnLimit <= 0)
+            return;
+
+        StartCoroutine(SpawnTimer());
+        manager.AfterSpawn();
         spawnLimit--;
     }
     public void ChooseObject() // Public for testing

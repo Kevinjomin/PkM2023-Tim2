@@ -8,12 +8,11 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] private int twoStar;
     [SerializeField] private int threeStar;
 
-    public int worldTrashLimit;
     public float timeLimit;
 
     [Header("DONT USE THIS, ONLY FOR TESTING")]
     public int score;
-
+    [SerializeField] SpawnManager manager;
     [SerializeField] private ScoreUI ui;
     [SerializeField] private RatingUI ratingUi;
 
@@ -30,7 +29,7 @@ public class ScoreSystem : MonoBehaviour
     {
         ui.InitializeUI(oneStar, twoStar, threeStar);
 
-        ui.UpdateLimit(worldTrashLimit);
+        ui.UpdateLimit(manager.worldTrashLimit);
         ui.UpdateScore(score);
     }
     public void AddScore()
@@ -38,12 +37,6 @@ public class ScoreSystem : MonoBehaviour
         score++;
         ui.UpdateScore(score);
     }
-    public void DecreaseLimit()
-    {
-        worldTrashLimit--;
-        ui.UpdateLimit(worldTrashLimit);
-    }
-
     public void EndGame()
     {
         int rating = CheckStar();
