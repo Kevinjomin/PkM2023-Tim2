@@ -9,6 +9,7 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] private int threeStar;
 
     public float timeLimit;
+    public int trashToCollect;
 
     [Header("DONT USE THIS, ONLY FOR TESTING")]
     public int score;
@@ -27,14 +28,25 @@ public class ScoreSystem : MonoBehaviour
 
     private void Start()
     {
+        trashToCollect = manager.worldTrashLimit;
         ui.InitializeUI(oneStar, twoStar, threeStar);
 
-        ui.UpdateLimit(manager.worldTrashLimit);
+        ui.UpdateLimit(trashToCollect);
         ui.UpdateScore(score);
     }
     public void AddScore()
     {
         score++;
+        trashToCollect--;
+
+        ui.UpdateLimit(trashToCollect);
+        ui.UpdateScore(score);
+    }
+    public void addWrong()
+    {
+        trashToCollect--;
+
+        ui.UpdateLimit(trashToCollect);
         ui.UpdateScore(score);
     }
     public void EndGame()

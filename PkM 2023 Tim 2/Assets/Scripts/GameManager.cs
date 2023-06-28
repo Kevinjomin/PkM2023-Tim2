@@ -24,8 +24,11 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.L))
+        if (Input.GetKeyDown(KeyCode.L)) // FOR TESTING PURPOSES
             ChangeState(2);
+        if (scoreSystem.trashToCollect <= 0)
+            ChangeState(2);
+
     }
     public void ChangeState(int state)
     {

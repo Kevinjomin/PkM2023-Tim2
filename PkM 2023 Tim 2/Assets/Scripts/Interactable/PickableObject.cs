@@ -45,7 +45,7 @@ public class PickableObject : MonoBehaviour
     }
     public void throwAwayIncorrect()
     {
-        //scoreSystem.addWrong();
+        scoreSystem.addWrong();
         Destroy(gameObject);
     }
 }

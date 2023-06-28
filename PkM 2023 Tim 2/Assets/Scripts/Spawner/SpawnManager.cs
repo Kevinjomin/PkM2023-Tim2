@@ -37,7 +37,7 @@ public class SpawnManager : MonoBehaviour
             return;
         }
 
-        int whereToSpawn = Random.Range(0, readySpawner.Count - 1);
+        int whereToSpawn = Random.Range(0, readySpawner.Count);
         readySpawner[whereToSpawn].ChooseObject();
     }
     public void AfterSpawn()
