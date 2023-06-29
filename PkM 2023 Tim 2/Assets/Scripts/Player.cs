@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float pickupRange = 2f;
     [SerializeField] private GameObject holdItemContainer;
+    [SerializeField] private GameManager gameManager;
 
     private ScoreSystem scoreSystem;
     private PickableObject heldObject;
@@ -14,16 +15,18 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        inputMovement();
-        if(isHolding == false)
+        if(gameManager != null && gameManager.gameState == GameManager.GameState.INGAME)
         {
-            pickupObject();
+            inputMovement();
+            if (isHolding == false)
+            {
+                pickupObject();
+            }
+            else
+            {
+                throwObject();
+            }
         }
-        else
-        {
-            throwObject();
-        }
-
     }
 
     private void inputMovement()
