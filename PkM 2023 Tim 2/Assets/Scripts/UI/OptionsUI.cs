@@ -9,9 +9,18 @@ public class OptionsUI : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public TMP_Dropdown resolutionDropdown;
+    [SerializeField] public Slider volumeSlider;
 
     private Resolution[] resolutions;
-    
+
+    private void Awake()
+    {
+        // Set the initial value of the volume Slider
+        float currentVolume;
+        audioMixer.GetFloat("volume", out currentVolume);
+        volumeSlider.value = currentVolume;
+    }
+
     private void Start()
     {
         resolutions = Screen.resolutions;

@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float pickupRange = 2f;
     [SerializeField] private GameObject holdItemContainer;
+    [SerializeField] private AudioSource walkSound, insertingTrashSound, pickOrganicSound, pickInorganicSound, pickB3Sound;
     [SerializeField] private GameManager gameManager;
 
     private ScoreSystem scoreSystem;
@@ -15,7 +16,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(gameManager != null && gameManager.gameState == GameManager.GameState.INGAME)
+        if(gameManager != null && PauseMenuUI.isPaused == false && gameManager.gameState == GameManager.GameState.INGAME)
         {
             inputMovement();
             if (isHolding == false)
@@ -84,6 +85,17 @@ public class Player : MonoBehaviour
         }
         if (canMove)
         {
+            if((moveDirection.x != 0 || moveDirection.z != 0))
+            {
+                if(walkSound.isPlaying == false)
+                {
+                    walkSound.Play();
+                }
+            }
+            else
+            {
+                walkSound.Stop();
+            }
             transform.position += moveDirection * moveDistance;
         }
 
@@ -125,6 +137,18 @@ public class Player : MonoBehaviour
                 isHolding = true;
                 nearestPickable.PickUp(holdItemContainer.transform);
                 heldObject = nearestPickable;
+                if (nearestPickable.typeIndex == 1)
+                {
+                    pickOrganicSound.Play();
+                }
+                else if(nearestPickable.typeIndex == 2)
+                {
+                    pickInorganicSound.Play();
+                }
+                else
+                {
+                    pickB3Sound.Play();
+                }
             }
         }
     }
@@ -159,6 +183,7 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 isHolding = false;
+                insertingTrashSound.Play();
                 if(heldObject.typeIndex == nearestTrashCan.typeIndex)
                 {
                     heldObject.throwAwayCorrect();

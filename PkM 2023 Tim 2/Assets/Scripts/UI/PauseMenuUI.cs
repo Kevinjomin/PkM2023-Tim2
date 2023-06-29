@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PauseMenuUI : MonoBehaviour
 {
     [SerializeField] private Button MenuButton;
+    [SerializeField] private GameManager gameManager;
 
     public static bool isPaused = false;
     public GameObject pauseMenu;
@@ -23,15 +24,18 @@ public class PauseMenuUI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(gameManager != null && gameManager.gameState == GameManager.GameState.INGAME)
         {
-            if (isPaused)
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                Resume();
-            }
-            else
-            {
-                Pause();
+                if (isPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
             }
         }
     }
