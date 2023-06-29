@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (Organic) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -822,6 +826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (B3) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1244,6 +1252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (B3) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1305,6 +1317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (Organic) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1335,7 +1351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346005620}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.87, y: 1.68, z: -5.07}
+  m_LocalPosition: {x: -19.23, y: 1.68, z: -5.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1559,6 +1575,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
       propertyPath: m_Name
       value: Trash (Organic)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1832,6 +1852,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
       propertyPath: m_Name
       value: Trash (B3) (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3649,6 +3673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (non-organic) (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4186,6 +4214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (non-organic) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4277,6 +4309,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
       propertyPath: m_Name
       value: Trash (B3) (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4373,7 +4409,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
+  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4847,7 +4883,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137961461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.22, y: 1.68, z: -16.07}
+  m_LocalPosition: {x: -3.22, y: 1.68, z: -20.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4871,8 +4907,8 @@ MonoBehaviour:
   spawnLimit: 5
   spawnCooldown: 5
   radius: 8
-  uncommonPercentage: 15
-  rarePercentage: 5
+  uncommonPercentage: 0
+  rarePercentage: 100
   commonObject: []
   uncommonObject: []
   rareObject: []
@@ -6417,6 +6453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (non-organic) (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6447,7 +6487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394149434}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.32, y: 1.68, z: -6.14}
+  m_LocalPosition: {x: 13.1, y: 1.68, z: -6.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7312,6 +7352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (non-organic) (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7372,6 +7416,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
       propertyPath: m_Name
       value: Trash (Organic) (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7645,6 +7693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (B3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7787,6 +7839,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
       propertyPath: m_Name
       value: Trash (Organic) (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8081,6 +8137,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
       propertyPath: m_Name
       value: Trash (non-organic)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9337,6 +9397,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (non-organic) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: a4d9ed07aad812945bd056c2a2f3ca23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9800,7 +9864,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962208872}
-  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
+  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9864,6 +9928,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
       propertyPath: m_Name
       value: Trash (B3) (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10066,6 +10134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trash (Organic) (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: d2e21ac9e94f0674fb6ca1c79c53c288, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10126,6 +10198,10 @@ PrefabInstance:
     - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
       propertyPath: m_Name
       value: Trash (B3) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594225706700272519, guid: fce0ea25ee551dd4fa8c0485e36ee16d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
