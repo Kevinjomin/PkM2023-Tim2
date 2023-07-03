@@ -10,7 +10,7 @@ public class CollectibleManager : MonoBehaviour
 {
     public List<Collectibles> collectibles = new List<Collectibles>();
     public static CollectibleManager instance;
-    [SerializeField] private Compendium compendium;
+    [SerializeField] private Compendium compendium; //The compendium should be the one seeking for collectible manager
 
     private Scene scene;
 
