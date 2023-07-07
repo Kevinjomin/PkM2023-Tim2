@@ -10,7 +10,6 @@ public class CollectibleManager : MonoBehaviour
 {
     public List<Collectibles> collectibles = new List<Collectibles>();
     public static CollectibleManager instance;
-    [SerializeField] private Compendium compendium; //The compendium should be the one seeking for collectible manager
 
     private Scene scene;
 
@@ -23,38 +22,10 @@ public class CollectibleManager : MonoBehaviour
 
         if (instance == this)
         {
-            SceneManager.sceneLoaded -= OnSceneLoaded; // Make Sure there's only one listener
-            SceneManager.sceneLoaded += OnSceneLoaded;
-
             DontDestroyOnLoad(gameObject);
 
             scene = SceneManager.GetActiveScene();
         }
-    }
-    private void OnDestroy()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (compendium == null)
-        {
-            try
-            {
-                compendium = GameObject.Find("Compendium").GetComponent<Compendium>();
-            }
-            catch
-            {
-                Debug.Log("No Compendium (On Loading Scene)");
-                return;
-            }
-        }
-        DisplayCollectibles();
-    }
-    private void DisplayCollectibles()
-    {
-        compendium.InitializeCollectible(collectibles);
     }
 
     public Collectibles GetByID(int id)

@@ -24,15 +24,21 @@ public class Spawner : MonoBehaviour
 
     [HideInInspector] public bool readyToSpawn = true;
 
+    private void Start()
+    {
+        if (manager == null)
+            manager = GameObject.Find("Trash Spawner").GetComponent<SpawnManager>();
+
+        InitializeSpawner();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.P)) // TESTING PURPOSES
             ChooseObject();
     }
     //Initialize Stuff
-    public void InitializeSpawner(SpawnManager manager)
+    public void InitializeSpawner()
     {
-        this.manager = manager;
         for (int i = 0; i < idSelected.Count; i++)
         {
             Collectibles selectedCollectible = CollectibleManager.instance.GetByID(idSelected[i]);
@@ -44,6 +50,7 @@ public class Spawner : MonoBehaviour
             DeactivateSpawner();
 
         InitializeChances();
+        manager.AddSpawner(this);
     }
     private void InitializeChances()
     {

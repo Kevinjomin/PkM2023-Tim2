@@ -18,8 +18,15 @@ public class Compendium : MonoBehaviour
     [SerializeField] private GameObject PreviousPage;
     [SerializeField] private GameObject NextPage;
 
-    [SerializeField] private int pageActive = 0;
+    private int pageActive = 0;
+    private CollectibleManager manager;
 
+    private void Start()
+    {
+        if (manager == null)
+            manager = GameObject.Find("Collectible Manager").GetComponent<CollectibleManager>();
+        InitializeCollectible(manager.collectibles);
+    }
     public void InitializeCollectible(List<Collectibles> collectibles)
     {
         int j = 0;

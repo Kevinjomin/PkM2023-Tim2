@@ -220,6 +220,7 @@ Transform:
   - {fileID: 1454905343}
   - {fileID: 1920607223}
   - {fileID: 1598867418}
+  - {fileID: 1785551314}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2158,7 +2159,7 @@ GameObject:
   - component: {fileID: 581912941}
   - component: {fileID: 581912940}
   m_Layer: 5
-  m_Name: SCORE Text
+  m_Name: Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4409,7 +4410,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361685, z: 0.00000002542465, w: 0.90582615}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7150,11 +7151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54d2335ec6fcb549ab8c2f012846ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawner:
-  - {fileID: 346005622}
-  - {fileID: 295019031}
-  - {fileID: 1394149436}
-  - {fileID: 1137961463}
   timeToSpawn: 2
   worldTrashLimit: 12
   collectedObject: []
@@ -7859,7 +7855,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1598867418}
   - component: {fileID: 1598867419}
-  - component: {fileID: 1598867420}
   m_Layer: 0
   m_Name: Game State
   m_TagString: Untagged
@@ -7899,24 +7894,6 @@ MonoBehaviour:
   endPanel: {fileID: 1213563572}
   scoreSystem: {fileID: 1920607225}
   gameState: 0
---- !u!114 &1598867420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598867417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88a249a809c65264da0f16ac8f1d689e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ratingDescription: {fileID: 1709263330}
-  menuButton: {fileID: 1330293963}
-  Stars:
-  - {fileID: 1631299358}
-  - {fileID: 532913898}
-  - {fileID: 1544217676}
 --- !u!1 &1612237691
 GameObject:
   m_ObjectHideFlags: 0
@@ -8752,6 +8729,76 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4384374919524501871, guid: 0ac979a07b55a564095c9b4d9e353f72, type: 3}
   m_PrefabInstance: {fileID: 4053869243886909255}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1785551313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1785551314}
+  - component: {fileID: 1785551316}
+  - component: {fileID: 1785551315}
+  m_Layer: 0
+  m_Name: UI Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1785551314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785551313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 57115547}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1785551315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785551313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a249a809c65264da0f16ac8f1d689e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ratingDescription: {fileID: 1709263330}
+  menuButton: {fileID: 1330293963}
+  Stars:
+  - {fileID: 1631299358}
+  - {fileID: 532913898}
+  - {fileID: 1544217676}
+--- !u!114 &1785551316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785551313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aba4b5bfdb1be354e89dc088f50708f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreCounter: {fileID: 581912940}
+  limitCounter: {fileID: 1801530326}
+  timeCounter: {fileID: 0}
+  oneStarText: {fileID: 706677475}
+  twoStarText: {fileID: 2093393964}
+  threeStarText: {fileID: 1246855619}
+  WinText: {fileID: 0}
 --- !u!1 &1786738834
 GameObject:
   m_ObjectHideFlags: 0
@@ -9602,7 +9649,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1920607223}
   - component: {fileID: 1920607225}
-  - component: {fileID: 1920607224}
   m_Layer: 0
   m_Name: Score Manager
   m_TagString: Untagged
@@ -9625,25 +9671,6 @@ Transform:
   m_Father: {fileID: 57115547}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1920607224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920607222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba4b5bfdb1be354e89dc088f50708f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreCounter: {fileID: 581912940}
-  limitCounter: {fileID: 1801530326}
-  timeCounter: {fileID: 0}
-  oneStarText: {fileID: 706677475}
-  twoStarText: {fileID: 2093393964}
-  threeStarText: {fileID: 1246855619}
-  WinText: {fileID: 2046954316}
 --- !u!114 &1920607225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9663,8 +9690,8 @@ MonoBehaviour:
   trashToCollect: 0
   score: 0
   manager: {fileID: 1454905344}
-  ui: {fileID: 1920607224}
-  ratingUi: {fileID: 1598867420}
+  ui: {fileID: 1785551316}
+  ratingUi: {fileID: 1785551315}
   endRating: 0
 --- !u!1 &1937105257
 GameObject:
@@ -9864,7 +9891,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962208872}
-  m_LocalRotation: {x: 0.4236497, y: 0.000000006333976, z: -0.0000000029623664, w: 0.9058261}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361685, z: 0.00000002542465, w: 0.90582615}
   m_LocalPosition: {x: 0, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10471,7 +10498,6 @@ MonoBehaviour:
   Pages: []
   PreviousPage: {fileID: 1312341954}
   NextPage: {fileID: 1301374028}
-  pageActive: 0
 --- !u!1 &2136444273
 GameObject:
   m_ObjectHideFlags: 0

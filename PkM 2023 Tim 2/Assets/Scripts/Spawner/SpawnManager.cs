@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField] private List<Spawner> spawner = new List<Spawner>();
+    private List<Spawner> spawners = new List<Spawner>();
     [SerializeField] private float timeToSpawn;
 
     public int worldTrashLimit;
@@ -12,13 +12,11 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
-        if (spawner.Count == 0)
-        {
-            Debug.Log("NO SPAWNER IN THE MAP");
-            return;
-        }
-        InitializeManager();
         StartCoroutine(SpawnCooldown(1f));
+    }
+    public void AddSpawner(Spawner spawner)
+    {
+        spawners.Add(spawner);
     }
     private void RandomnizeSpawn()
     {
@@ -26,10 +24,10 @@ public class SpawnManager : MonoBehaviour
             return;
 
         List<Spawner> readySpawner = new List<Spawner>();
-        for (int i = 0; i < spawner.Count; i++)
+        for (int i = 0; i < spawners.Count; i++)
         {
-            if (spawner[i].readyToSpawn == true)
-                readySpawner.Add(spawner[i]);
+            if (spawners[i].readyToSpawn == true)
+                readySpawner.Add(spawners[i]);
         }
         if (readySpawner.Count == 0)
         {
@@ -49,13 +47,6 @@ public class SpawnManager : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToSpawn);
         RandomnizeSpawn();
-    }
-    private void InitializeManager()
-    {
-        for (int i = 0; i < spawner.Count; i++)
-        {
-            spawner[i].InitializeSpawner(this);
-        }
     }
     public void UpdateCompendium()
     {
