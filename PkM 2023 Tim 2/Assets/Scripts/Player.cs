@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float pickupRange = 2f;
     [SerializeField] private GameObject holdItemContainer;
     [SerializeField] private AudioSource walkSound, insertingTrashSound, pickOrganicSound, pickInorganicSound, pickB3Sound;
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameStateManager gameManager;
 
     private ScoreSystem scoreSystem;
     private PickableObject heldObject;
@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(gameManager != null && PauseMenuUI.isPaused == false && gameManager.gameState == GameManager.GameState.INGAME)
+        if(gameManager != null && PauseMenuUI.isPaused == false && gameManager.gameState == GameStateManager.GameState.INGAME)
         {
             inputMovement();
             if (isHolding == false)

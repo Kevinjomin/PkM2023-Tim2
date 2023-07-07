@@ -25,7 +25,8 @@ public class Compendium : MonoBehaviour
     {
         if (manager == null)
             manager = GameObject.Find("Collectible Manager").GetComponent<CollectibleManager>();
-        InitializeCollectible(manager.collectibles);
+
+        InitializeCollectible(manager.GetAllCollectibles());
     }
     public void InitializeCollectible(List<Collectibles> collectibles)
     {

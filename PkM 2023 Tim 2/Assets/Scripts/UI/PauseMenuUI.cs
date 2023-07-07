@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PauseMenuUI : MonoBehaviour
 {
     [SerializeField] private Button MenuButton;
-    [SerializeField] private GameManager gameManager;
+    [SerializeField] private GameStateManager gameManager;
 
     public static bool isPaused = false;
     public GameObject pauseMenu;
@@ -24,7 +24,7 @@ public class PauseMenuUI : MonoBehaviour
 
     void Update()
     {
-        if(gameManager != null && gameManager.gameState == GameManager.GameState.INGAME)
+        if(gameManager != null && gameManager.gameState == GameStateManager.GameState.INGAME)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

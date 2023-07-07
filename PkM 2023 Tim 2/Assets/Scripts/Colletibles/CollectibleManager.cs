@@ -8,10 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class CollectibleManager : MonoBehaviour
 {
-    public List<Collectibles> collectibles = new List<Collectibles>();
+    private List<Collectibles> collectibles = new List<Collectibles>();
     public static CollectibleManager instance;
 
-    private Scene scene;
 
     private void Awake()
     {
@@ -23,11 +22,12 @@ public class CollectibleManager : MonoBehaviour
         if (instance == this)
         {
             DontDestroyOnLoad(gameObject);
-
-            scene = SceneManager.GetActiveScene();
         }
     }
-
+    public List<Collectibles> GetAllCollectibles()
+    {
+        return collectibles;
+    }
     public Collectibles GetByID(int id)
     {
         for (int i = 0; i < collectibles.Count; i++)
