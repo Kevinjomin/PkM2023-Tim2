@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoneyManager : MonoBehaviour
+public class MoneyManager : MonoBehaviour //May Combine this with Level Manager
 {
     public static MoneyManager instance;
     [SerializeField] private int playerMoney = 0;

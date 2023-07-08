@@ -8,9 +8,8 @@ using UnityEngine.SceneManagement;
 
 public class CollectibleManager : MonoBehaviour
 {
-    private List<Collectibles> collectibles = new List<Collectibles>();
+    [SerializeField] private List<Collectibles> collectibles = new List<Collectibles>();
     public static CollectibleManager instance;
-
 
     private void Awake()
     {
@@ -22,6 +21,13 @@ public class CollectibleManager : MonoBehaviour
         if (instance == this)
         {
             DontDestroyOnLoad(gameObject);
+        }
+    }
+    private void Start()
+    {
+        if (collectibles.Count <= 0)
+        {
+            Debug.LogWarning("No collectible on data");
         }
     }
     public List<Collectibles> GetAllCollectibles()
