@@ -34,6 +34,7 @@ public class LevelDisplayer : MonoBehaviour
     }
     public void SwitchScene()
     {
+        LevelManager.instance.activeLevel = levelInfo;
         SceneManager.LoadScene(levelInfo.GetSceneID());
     }
 }

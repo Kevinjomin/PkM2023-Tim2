@@ -6588,9 +6588,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfc9d53fd0c8d904cb0505f8dccad552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  activeLevel:
+    levelName: 
+    rating: 0
+    score: 0
+    locked: 1
+    nextLevelID: 0
+    sceneID: 0
   levels:
   - levelName: Organic Trash
-    rating: 2
+    rating: 1
     score: 0
     locked: 0
     nextLevelID: 1
@@ -6599,20 +6606,20 @@ MonoBehaviour:
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 0
-    sceneID: 0
+    nextLevelID: 2
+    sceneID: 2
   - levelName: Electronic Trash
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 0
-    sceneID: 0
+    nextLevelID: 3
+    sceneID: 2
   - levelName: Level 1
     rating: 0
     score: 0
     locked: 1
     nextLevelID: 0
-    sceneID: 0
+    sceneID: 2
 --- !u!1 &1563116357
 GameObject:
   m_ObjectHideFlags: 0

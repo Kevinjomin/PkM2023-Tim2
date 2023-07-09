@@ -22,35 +22,42 @@ public class Levels
     [SerializeField] private int sceneID;
     private Levels nextLevel;
 
+    public void InitializeLevel(Levels nextLevel)
+    {
+        this.nextLevel = nextLevel;
+    }
+
     public string GetLevelName()
     {
         return levelName;
+    }
+    public int GetSceneID()
+    {
+        return sceneID;
+    }
+    public bool GetLocked()
+    {
+        return locked;
     }
 
     public int GetNextLevelID()
     {
         return nextLevelID;
     }
-    public int GetSceneID()
+    public Levels GetNextLevel()
     {
-        return sceneID;
+        return nextLevel;
     }
 
-    public bool GetLocked()
-    {
-        return locked;
-    }
-
-    public void InitializeLevel(Levels nextLevel)
-    {
-        this.nextLevel = nextLevel;
-    }
     public void UnlockThisLevel()
     {
         locked = false;
     }
-    public void UnlockOtherLevel()
+    public void LevelCompleted(int rating)
     {
+        if (rating > (int)this.rating)
+            this.rating = (Rating)rating;
+
         nextLevel.UnlockThisLevel();
     }
 
@@ -58,9 +65,4 @@ public class Levels
     {
         return (int)rating; 
     }
-    public void SetRating(int rating)
-    {
-        this.rating = (Rating)rating;
-    }
-
 }

@@ -13,7 +13,8 @@ public class ScoreSystem : MonoBehaviour
 
     [Header("DONT USE THIS, ONLY FOR TESTING")]
     public int score;
-    [SerializeField] SpawnManager manager;
+
+    [SerializeField] private SpawnManager manager;
     [SerializeField] private ScoreUI ui;
     [SerializeField] private RatingUI ratingUi;
 
@@ -49,13 +50,7 @@ public class ScoreSystem : MonoBehaviour
         ui.UpdateLimit(trashToCollect);
         ui.UpdateScore(score);
     }
-    public void EndGame()
-    {
-        int rating = CheckStar();
-        string ratingDescription = RatingDescription();
 
-        ratingUi.DisplayRating(ratingDescription, rating);
-    }
     private string RatingDescription()
     {
         switch(endRating)
@@ -88,5 +83,19 @@ public class ScoreSystem : MonoBehaviour
             endRating = EndRating.FAILURE;
 
         return (int)endRating;
+    }
+
+    public void EndGame()
+    {
+        int rating = CheckStar();
+        string ratingDescription = RatingDescription();
+
+        ratingUi.DisplayRating(ratingDescription, rating);
+
+        if (rating > 0) // If Win
+        {
+            ratingUi.WinCondition(true, LevelManager.instance.activeLevel);
+            LevelManager.instance.LevelCompleted(rating);
+        }
     }
 }

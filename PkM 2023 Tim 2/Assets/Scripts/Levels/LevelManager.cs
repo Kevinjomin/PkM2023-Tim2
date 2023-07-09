@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour //May Combine this with Level Manager
 {
     public static LevelManager instance;
-    private int activeLevel;
+    public Levels activeLevel;
 
     [Header("NEXT LEVEL ID IS BASED ON LIST'S ELEMENT")]
     public List<Levels> levels = new List<Levels>();
@@ -34,8 +34,9 @@ public class LevelManager : MonoBehaviour //May Combine this with Level Manager
             levels[i].InitializeLevel(levels[nextLevel]);
         }
     }
-    public void LevelCompleted()
+    public void LevelCompleted(int rating)
     {
-        levels[activeLevel].UnlockOtherLevel();
+        activeLevel.LevelCompleted(rating);
+        activeLevel = null;
     }
 }

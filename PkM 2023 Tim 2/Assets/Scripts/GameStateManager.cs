@@ -57,6 +57,6 @@ public class GameStateManager : MonoBehaviour
     }
     public void GameEnd()
     {
-        scoreSystem.EndGame();
+        scoreSystem.EndGame(); // Should be Event
     }
 }
