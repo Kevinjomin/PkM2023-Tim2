@@ -15,10 +15,10 @@ public class MainMenuUI : MonoBehaviour
     private void Awake()
     {
         // make event for every button clicks that changes the scene
-        PlayButton.onClick.AddListener(() =>
+        /*PlayButton.onClick.AddListener(() =>
         {
             Loader.Load(Loader.scene.GameScene);
-        });
+        });*/
         QuitButton.onClick.AddListener(() =>
         {
             Application.Quit();

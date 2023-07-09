@@ -32,6 +32,7 @@ public class LevelUI : UIList
                 j++;
             }
             GameObject displayer = Instantiate(itemPrefab, Pages[j - 1].transform); // Make sure to instantiate on Item List
+            displayer.GetComponent<LevelDisplayer>().Initialize(levels[i]);
         }
 
         UpdateButton();

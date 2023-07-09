@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Levels 
+public class Levels
 {
     [SerializeField] private string levelName;
     public enum Rating
@@ -22,6 +22,11 @@ public class Levels
     [SerializeField] private int sceneID;
     private Levels nextLevel;
 
+    public string GetLevelName()
+    {
+        return levelName;
+    }
+
     public int GetNextLevelID()
     {
         return nextLevelID;
@@ -30,10 +35,12 @@ public class Levels
     {
         return sceneID;
     }
+
     public bool GetLocked()
     {
         return locked;
     }
+
     public void InitializeLevel(Levels nextLevel)
     {
         this.nextLevel = nextLevel;
@@ -42,12 +49,18 @@ public class Levels
     {
         locked = false;
     }
-    public void SetRating(int rating)
-    {
-        this.rating = (Rating)rating;
-    }
     public void UnlockOtherLevel()
     {
         nextLevel.UnlockThisLevel();
     }
+
+    public int GetRating()
+    {
+        return (int)rating; 
+    }
+    public void SetRating(int rating)
+    {
+        this.rating = (Rating)rating;
+    }
+
 }

@@ -6589,41 +6589,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - levelName: Tutorial
-    rating: 0
+  - levelName: Organic Trash
+    rating: 2
     score: 0
     locked: 0
     nextLevelID: 1
-    sceneID: 3
-  - levelName: 
+    sceneID: 2
+  - levelName: Inorganic Trash
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 2
+    nextLevelID: 0
     sceneID: 0
-  - levelName: 
+  - levelName: Electronic Trash
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 3
+    nextLevelID: 0
     sceneID: 0
-  - levelName: 
+  - levelName: Level 1
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 4
-    sceneID: 0
-  - levelName: 
-    rating: 0
-    score: 0
-    locked: 1
-    nextLevelID: 5
-    sceneID: 0
-  - levelName: 
-    rating: 0
-    score: 0
-    locked: 1
-    nextLevelID: 5
+    nextLevelID: 0
     sceneID: 0
 --- !u!1 &1563116357
 GameObject:
