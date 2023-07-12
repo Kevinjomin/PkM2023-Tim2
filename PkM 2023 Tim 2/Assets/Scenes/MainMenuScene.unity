@@ -3298,7 +3298,7 @@ GameObject:
   - component: {fileID: 715397828}
   - component: {fileID: 715397827}
   m_Layer: 5
-  m_Name: Levels UI (Testing)
+  m_Name: Levels UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6598,7 +6598,7 @@ MonoBehaviour:
   levels:
   - levelName: Organic Trash
     rating: 1
-    score: 0
+    score: 4
     locked: 0
     nextLevelID: 1
     sceneID: 2

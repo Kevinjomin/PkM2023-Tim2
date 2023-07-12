@@ -8,13 +8,18 @@ using UnityEngine.SceneManagement;
 public class LevelDisplayer : MonoBehaviour
 {
     [SerializeField] private Levels levelInfo;
+
     [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private TextMeshProUGUI score;
+
     [SerializeField] private List<GameObject> stars = new List<GameObject>();
 
     public void Initialize(Levels info)
     {
         levelInfo = info;
+
         title.text = levelInfo.GetLevelName();
+        score.text = "High Score : " + levelInfo.GetScore();
 
         if (levelInfo.GetLocked() == true)
             this.gameObject.GetComponent<Button>().interactable = false;
@@ -23,6 +28,8 @@ public class LevelDisplayer : MonoBehaviour
 
         RatingChecker();
     }
+
+
     private void RatingChecker()
     {
         int rating = levelInfo.GetRating();

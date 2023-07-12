@@ -53,10 +53,13 @@ public class Levels
     {
         locked = false;
     }
-    public void LevelCompleted(int rating)
+    public void LevelCompleted(int rating, int score)
     {
         if (rating > (int)this.rating)
             this.rating = (Rating)rating;
+
+        if (score > this.score)
+            this.score = score;
 
         nextLevel.UnlockThisLevel();
     }
@@ -64,5 +67,9 @@ public class Levels
     public int GetRating()
     {
         return (int)rating; 
+    }
+    public int GetScore()
+    {
+        return score;
     }
 }

@@ -34,9 +34,9 @@ public class LevelManager : MonoBehaviour //May Combine this with Level Manager
             levels[i].InitializeLevel(levels[nextLevel]);
         }
     }
-    public void LevelCompleted(int rating)
+    public void LevelCompleted(int rating, int score)
     {
-        activeLevel.LevelCompleted(rating);
+        activeLevel.LevelCompleted(rating, score);
         activeLevel = null;
     }
 }
