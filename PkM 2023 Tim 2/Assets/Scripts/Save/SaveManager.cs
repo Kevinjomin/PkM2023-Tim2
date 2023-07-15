@@ -8,11 +8,12 @@ public class SaveManager : MonoBehaviour
 { 
     [SerializeField] private string fileName;
 
-    [SerializeField] private ProfileData selectedProfile;
-    [SerializeField] private List<ProfileData> availableProfiles; // Find the same id on save menu manager
-
     [SerializeField] private string saveFolderPath;
     [SerializeField] private string saveName;
+
+    [Header ("Testing Stuff")] 
+    [SerializeField] private ProfileData selectedProfile;
+    [SerializeField] private List<ProfileData> availableProfiles; // Find the same id on save menu manager
 
     public static SaveManager instance;
 
@@ -27,14 +28,14 @@ public class SaveManager : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
         }
-    }
-    private void Start() 
-    {
+
         InitializeProfiles();
     }
+
     private void InitializeProfiles()
     {
         IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(saveFolderPath).EnumerateDirectories();
+        availableProfiles.Clear();
 
         foreach (DirectoryInfo dirInfo in dirInfos)
         {
@@ -51,25 +52,23 @@ public class SaveManager : MonoBehaviour
             {
                 availableProfiles.Add(profileData);
             }
-            else
-            {
-                Debug.LogError("Tried to load profile, but failed");
-            }
         }
     }
-
-
-    public void NewGame(string selectedFolder)
+    public ProfileData CreateProfile(SaveSlot saveSlot)
     {
-        this.selectedProfile = new ProfileData(selectedFolder);
+        ProfileData newProfile = new ProfileData(saveSlot.GetID());
+        CreateData(newProfile);
+        InitializeProfiles();
+
+        return newProfile;
     }
-    public void SaveGame()
+    public void CreateData(ProfileData profileData)
     {
-        string fullPath = Path.Combine(saveFolderPath, selectedProfile.folderPath, saveName); 
+        string fullPath = Path.Combine(saveFolderPath, profileData.folderPath, saveName);
 
         Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
 
-        string dataToStore = JsonUtility.ToJson(selectedProfile, true);
+        string dataToStore = JsonUtility.ToJson(profileData, true);
 
         using (FileStream stream = new FileStream(fullPath, FileMode.Create))
         {
@@ -78,6 +77,12 @@ public class SaveManager : MonoBehaviour
                 writer.Write(dataToStore);
             }
         }
+    }
+
+
+    public void SaveGame()
+    {
+        CreateData(selectedProfile);
     }
     public void LoadGame(ProfileData selectedProfile)
     {
@@ -91,12 +96,12 @@ public class SaveManager : MonoBehaviour
     }
 
 
-    public void DeleteData(string selectedFolder)
+    public void DeleteData(ProfileData selectedProfile)
     {
-        if (selectedFolder == null)
+        if (selectedProfile.folderPath == null)
             return;
 
-        string fullPath = Path.Combine(saveFolderPath, selectedFolder, saveName);
+        string fullPath = Path.Combine(saveFolderPath, selectedProfile.folderPath, saveName);
         try
         {
             if (File.Exists(fullPath))
@@ -120,7 +125,7 @@ public class SaveManager : MonoBehaviour
 
         if (File.Exists(fullPath))
         {
-            string dataToLoad = ""; // Load the Json data
+            string dataToLoad = ""; 
 
             using (FileStream stream = new FileStream(fullPath, FileMode.Open))
             {
@@ -137,5 +142,16 @@ public class SaveManager : MonoBehaviour
         }
 
         return loadedData;
+    }
+
+
+    public void ChangeSelectedProfileId(ProfileData newProfile)
+    {
+        selectedProfile = newProfile;
+        LoadGame(selectedProfile);
+    }
+    public List<ProfileData> GetAllProfiles()
+    {
+        return availableProfiles;
     }
 }
