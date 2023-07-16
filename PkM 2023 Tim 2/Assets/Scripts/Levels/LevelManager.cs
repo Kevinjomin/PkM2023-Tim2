@@ -39,4 +39,22 @@ public class LevelManager : MonoBehaviour //May Combine this with Level Manager
         activeLevel.LevelCompleted(rating, score);
         activeLevel = null;
     }
+
+    public List<LevelData> SendToProfile()
+    {
+        List<LevelData> levelInfos = new List<LevelData>();
+        for (int i = 0; i < levels.Count; i++)
+        {
+            LevelData level = new LevelData(levels[i].GetRating(), levels[i].GetScore(), levels[i].GetLocked());
+            levelInfos.Add(level);
+        }
+        return levelInfos;
+    }
+    public void LoadProfile(List<LevelData> levelInfos)
+    {
+        for (int i = 0; i < levels.Count; i++)
+        {
+            levels[i].LoadData(levelInfos[i]);
+        }
+    }
 }

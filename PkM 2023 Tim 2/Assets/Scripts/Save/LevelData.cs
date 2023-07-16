@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class LevelData : MonoBehaviour
+public class LevelData
 {
     public int rating;
     public int score;

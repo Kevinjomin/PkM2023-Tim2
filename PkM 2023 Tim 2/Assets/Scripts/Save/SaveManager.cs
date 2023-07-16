@@ -6,14 +6,13 @@ using System.IO;
 
 public class SaveManager : MonoBehaviour
 { 
-    [SerializeField] private string fileName;
-
-    [SerializeField] private string saveFolderPath;
+    private string saveFolderPath;
     [SerializeField] private string saveName;
 
     [Header ("Testing Stuff")] 
-    [SerializeField] private ProfileData selectedProfile;
-    [SerializeField] private List<ProfileData> availableProfiles; // Find the same id on save menu manager
+    public ProfileData selectedProfile;
+    private bool newProfile;
+    // [SerializeField] private List<ProfileData> availableProfiles; // Find the same id on save menu manager
 
     public static SaveManager instance;
 
@@ -29,12 +28,31 @@ public class SaveManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
 
+        saveFolderPath = Application.persistentDataPath;
         InitializeProfiles();
     }
 
     private void InitializeProfiles()
     {
-        IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(saveFolderPath).EnumerateDirectories();
+        string fullPath = Path.Combine(saveFolderPath, "Profile Data", saveName);
+
+        if (!File.Exists(fullPath))
+        {
+            Debug.LogWarning("Creating a new one");
+            ProfileData newProfile = new ProfileData("Profile Data");
+
+            CreateData(newProfile);
+            this.newProfile = true;
+        }
+        else
+        {
+            newProfile = false;
+            Debug.LogWarning("Finding file");
+        }
+
+        ChangeSelectedProfile(LoadData(fullPath));
+
+        /*IEnumerable<DirectoryInfo> dirInfos = new DirectoryInfo(saveFolderPath).EnumerateDirectories();
         availableProfiles.Clear();
 
         foreach (DirectoryInfo dirInfo in dirInfos)
@@ -51,17 +69,34 @@ public class SaveManager : MonoBehaviour
             if (profileData != null)
             {
                 availableProfiles.Add(profileData);
+                selectedProfile = profileData;
             }
-        }
+            else
+            {
+                ProfileData newProfile = new ProfileData("Profile Data");
+                CreateData(newProfile);
+            }
+        }*/
     }
-    public ProfileData CreateProfile(SaveSlot saveSlot)
+    /*public ProfileData CreateProfile(SaveSlot saveSlot)
     {
         ProfileData newProfile = new ProfileData(saveSlot.GetID());
         CreateData(newProfile);
         InitializeProfiles();
 
         return newProfile;
+    }*/
+    private void Start()
+    {
+        if (newProfile)
+        {
+            SaveGame();
+            newProfile = false;
+        }
+            
+        LoadGame();
     }
+
     public void CreateData(ProfileData profileData)
     {
         string fullPath = Path.Combine(saveFolderPath, profileData.folderPath, saveName);
@@ -82,45 +117,55 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGame()
     {
+        List<bool> collected = CollectibleManager.instance.SendToProfile();
+        List<LevelData> levelDatas = LevelManager.instance.SendToProfile();
+
+        Debug.Log("Saving");
+
+        selectedProfile.items = new List<bool>(collected);
+        selectedProfile.levelDatas = new List<LevelData>(levelDatas);
+
         CreateData(selectedProfile);
     }
-    public void LoadGame(ProfileData selectedProfile)
+    public void LoadGame(/*ProfileData selectedProfile*/)
     {
         if (selectedProfile == null)
         {
             Debug.Log("No data was found, Please create a new game");
             return;
         }
-
-        this.selectedProfile = LoadData(selectedProfile.folderPath);
+        CollectibleManager.instance.LoadProfile(selectedProfile.items);
+        LevelManager.instance.LoadProfile(selectedProfile.levelDatas);
     }
 
 
-    public void DeleteData(ProfileData selectedProfile)
+    public void ResetData(/*ProfileData selectedProfile*/)
     {
         if (selectedProfile.folderPath == null)
             return;
 
         string fullPath = Path.Combine(saveFolderPath, selectedProfile.folderPath, saveName);
-        try
+
+        if (File.Exists(fullPath))
         {
-            if (File.Exists(fullPath))
-            {
-                Directory.Delete(Path.GetDirectoryName(fullPath), true);
-            }
-            else
-            {
-                Debug.LogWarning("Data doesn't exist");
-            }
+            Directory.Delete(Path.GetDirectoryName(fullPath), true);
+            ProfileData newProfile = new ProfileData("Profile Data");
+
+            CreateData(newProfile);
+            ChangeSelectedProfile(LoadData(fullPath));
         }
-        catch
+        else
         {
-            Debug.LogError("Failed to delete the save file");
+            Debug.LogWarning("Data doesn't exist");
         }
+
+
     }
     public ProfileData LoadData(string selectedFolder)
     {
-        string fullPath = Path.Combine(saveFolderPath, selectedFolder, saveName);
+        string fullPath = Path.Combine(selectedFolder);
+        Debug.Log(fullPath);
+
         ProfileData loadedData = null;
 
         if (File.Exists(fullPath))
@@ -144,14 +189,13 @@ public class SaveManager : MonoBehaviour
         return loadedData;
     }
 
-
-    public void ChangeSelectedProfileId(ProfileData newProfile)
+    public void ChangeSelectedProfile(ProfileData newProfile)
     {
         selectedProfile = newProfile;
-        LoadGame(selectedProfile);
     }
-    public List<ProfileData> GetAllProfiles()
+
+    /*public List<ProfileData> GetAllProfiles()
     {
         return availableProfiles;
-    }
+    }*/
 }

@@ -26,6 +26,12 @@ public class Levels
     {
         this.nextLevel = nextLevel;
     }
+    public void LoadData(LevelData data)
+    {
+        rating = (Rating)data.rating;
+        score = data.score;
+        locked = data.locked;
+    }
 
     public string GetLevelName()
     {

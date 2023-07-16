@@ -54,4 +54,21 @@ public class CollectibleManager : MonoBehaviour
             }
         }
     }
+    
+    public List<bool> SendToProfile()
+    {
+        List<bool> collected = new List<bool>();
+        for(int i = 0; i < collectibles.Count; i++)
+        {
+            collected.Add(collectibles[i].collected);
+        }
+        return collected;
+    }
+    public void LoadProfile(List<bool> collected)
+    {
+        for (int i = 0; i < collectibles.Count; i++)
+        {
+            collectibles[i].collected = collected[i];
+        }
+    }
 }

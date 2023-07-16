@@ -6,7 +6,7 @@ using TMPro;
 
 public class SaveUIManager : MonoBehaviour
 {
-    [SerializeField] private List<SaveSlot> saveSlots = new List<SaveSlot>();
+    /*[SerializeField] private List<SaveSlot> saveSlots = new List<SaveSlot>();
     [SerializeField] private TextMeshProUGUI status;
 
     private void Start()
@@ -41,5 +41,5 @@ public class SaveUIManager : MonoBehaviour
             else
                 saveSlots[i].InitializeSaveSlot(profileData);
         }
-    }
+    }*/
 }
