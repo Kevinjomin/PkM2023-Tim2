@@ -16,6 +16,10 @@ public class CollectibleDisplayer : MonoBehaviour
         menuTitle = title;
         menuDesc = desc;
 
+        UpdateLocked();
+    }
+    public void UpdateLocked()
+    {
         if (!itemInfo.collected)
             gameObject.transform.GetChild(0).GetComponent<Image>().sprite = itemInfo.lockedImage;
 

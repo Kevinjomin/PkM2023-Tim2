@@ -10,6 +10,7 @@ public class Compendium : UIList
     [SerializeField] private TextMeshProUGUI menuDesc;
 
     [SerializeField] private GameObject LeftPage;
+    private List<CollectibleDisplayer> items = new List<CollectibleDisplayer>();
 
     private CollectibleManager manager;
 
@@ -35,9 +36,18 @@ public class Compendium : UIList
             }
             GameObject displayer = Instantiate(itemPrefab, Pages[j - 1].transform); // Make sure to instantiate on Item List
             displayer.GetComponent<CollectibleDisplayer>().Initialize(collectibles[i], menuTitle, menuDesc);
+
+            items.Add(displayer.GetComponent<CollectibleDisplayer>());
         }
 
         UpdateButton();
         UpdatePage(0);
+    }
+    public void UpdateLocked()
+    {
+        for(int i = 0; i < items.Count; i++)
+        {
+            items[i].UpdateLocked();
+        }
     }
 }

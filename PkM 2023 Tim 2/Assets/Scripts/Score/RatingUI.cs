@@ -17,6 +17,11 @@ public class RatingUI : MonoBehaviour
         menuButton.onClick.AddListener(() =>
         {
             Loader.Load(Loader.scene.MainMenuScene);
+            SaveManager.instance.SaveGame();
+        });
+        nextLevelButton.onClick.AddListener(() =>
+        {
+            SaveManager.instance.SaveGame();
         });
     }
     public void DisplayRating(string description, int star)
