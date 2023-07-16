@@ -6522,12 +6522,12 @@ GameObject:
   - component: {fileID: 1512242268}
   - component: {fileID: 1512242267}
   m_Layer: 0
-  m_Name: Save Manager
+  m_Name: Save Manager (Testing)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1512242267
 MonoBehaviour:
   m_ObjectHideFlags: 0
