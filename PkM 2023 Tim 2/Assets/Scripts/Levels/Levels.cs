@@ -32,6 +32,12 @@ public class Levels
         score = data.score;
         locked = data.locked;
     }
+    public void ResetData()
+    {
+        rating = Rating.NONE;
+        score = 0;
+        locked = true;
+    }
 
     public string GetLevelName()
     {

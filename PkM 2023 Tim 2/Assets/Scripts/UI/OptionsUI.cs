@@ -9,6 +9,7 @@ public class OptionsUI : MonoBehaviour
 {
     public AudioMixer audioMixer;
     public TMP_Dropdown resolutionDropdown;
+    [SerializeField] private Button resetButton;
     [SerializeField] public Slider volumeSlider;
 
     private Resolution[] resolutions;
@@ -41,7 +42,14 @@ public class OptionsUI : MonoBehaviour
         }
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue(); 
+        resolutionDropdown.RefreshShownValue();
+
+        resetButton.onClick.AddListener(() =>
+        {
+            CollectibleManager.instance.ResetProfile();
+            LevelManager.instance.ResetProfile();
+            SaveManager.instance.ResetData();
+        });
     }
 
     public void setResolution(int resolutionIndex)
@@ -60,4 +68,5 @@ public class OptionsUI : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+
 }

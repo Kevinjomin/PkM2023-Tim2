@@ -57,4 +57,12 @@ public class LevelManager : MonoBehaviour //May Combine this with Level Manager
             levels[i].LoadData(levelInfos[i]);
         }
     }
+    public void ResetProfile()
+    {
+        for (int i = 0; i < levels.Count; i++)
+        {
+            levels[i].ResetData();
+            levels[0].UnlockThisLevel();
+        }
+    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour
 { 
@@ -38,7 +39,7 @@ public class SaveManager : MonoBehaviour
 
         if (!File.Exists(fullPath))
         {
-            Debug.LogWarning("Creating a new one");
+            Debug.LogWarning("Creating a new profile");
             ProfileData newProfile = new ProfileData("Profile Data");
 
             CreateData(newProfile);
@@ -47,7 +48,6 @@ public class SaveManager : MonoBehaviour
         else
         {
             newProfile = false;
-            Debug.LogWarning("Finding file");
         }
 
         ChangeSelectedProfile(LoadData(fullPath));
@@ -92,8 +92,9 @@ public class SaveManager : MonoBehaviour
         {
             SaveGame();
             newProfile = false;
+            InitializeProfiles();
         }
-            
+
         LoadGame();
     }
 
@@ -144,6 +145,8 @@ public class SaveManager : MonoBehaviour
         if (selectedProfile.folderPath == null)
             return;
 
+        Debug.Log("Resetting");
+
         string fullPath = Path.Combine(saveFolderPath, selectedProfile.folderPath, saveName);
 
         if (File.Exists(fullPath))
@@ -152,14 +155,14 @@ public class SaveManager : MonoBehaviour
             ProfileData newProfile = new ProfileData("Profile Data");
 
             CreateData(newProfile);
+            SaveGame();
             ChangeSelectedProfile(LoadData(fullPath));
         }
         else
         {
             Debug.LogWarning("Data doesn't exist");
         }
-
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public ProfileData LoadData(string selectedFolder)
     {

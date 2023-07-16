@@ -71,4 +71,11 @@ public class CollectibleManager : MonoBehaviour
             collectibles[i].collected = collected[i];
         }
     }
+    public void ResetProfile()
+    {
+        for (int i = 0; i < collectibles.Count; i++)
+        {
+            collectibles[i].collected = false;
+        }
+    }
 }
