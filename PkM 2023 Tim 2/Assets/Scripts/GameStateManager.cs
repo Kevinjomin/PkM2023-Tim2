@@ -10,6 +10,8 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] private ScoreSystem scoreSystem;
 
+    public bool noninlevel;
+
     public enum GameState
     {
         START,
@@ -20,10 +22,15 @@ public class GameStateManager : MonoBehaviour
 
     private void Awake()
     {
-        ChangeState(0);
+        if (!noninlevel)
+            ChangeState(0);
     }
     private void Update()
     {
+        if (noninlevel)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.L)) // FOR TESTING PURPOSES
             ChangeState(2);
         if (scoreSystem.trashToCollect <= 0)
