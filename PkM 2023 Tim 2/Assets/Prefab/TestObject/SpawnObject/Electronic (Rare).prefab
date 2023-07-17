@@ -310,7 +310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HighlightVisual: {fileID: 6461247396571672116}
-  ScoreValue: 10
   typeIndex: 1
 --- !u!114 &-367540838650777645
 MonoBehaviour:
@@ -329,5 +328,6 @@ MonoBehaviour:
     name: 
     spawnObject: {fileID: 0}
     manager: {fileID: 0}
+    scoreSystem: {fileID: 0}
     rarity: 0
     rarityInt: 0

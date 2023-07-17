@@ -45,12 +45,15 @@ public class GameStateManager : MonoBehaviour
         {
             case GameState.START:
                 startPanel.SetActive(true);
+                Time.timeScale = 0f;
                 break;
             case GameState.INGAME:
                 inGamePanel.SetActive(true);
+                Time.timeScale = 1f;
                 break;
             case GameState.END:
                 endPanel.SetActive(true);
+                Time.timeScale = 0f;
                 GameEnd();
                 break;
         }

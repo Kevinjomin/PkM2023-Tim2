@@ -24,20 +24,24 @@ public class PauseMenuUI : MonoBehaviour
 
     void Update()
     {
-        if(gameManager != null && gameManager.gameState == GameStateManager.GameState.INGAME)
+        if(gameManager!= null)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (gameManager.gameState == GameStateManager.GameState.INGAME)
             {
-                if (isPaused)
+                if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    Resume();
-                }
-                else
-                {
-                    Pause();
+                    if (isPaused)
+                    {
+                        Resume();
+                    }
+                    else
+                    {
+                        Pause();
+                    }
                 }
             }
         }
+        
     }
 
     public void Resume()

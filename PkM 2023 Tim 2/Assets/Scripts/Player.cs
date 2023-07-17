@@ -14,8 +14,16 @@ public class Player : MonoBehaviour
     private PickableObject heldObject;
     private bool isHolding = false;
 
+    PickableObject previousPickable;
+    TrashCanObject previousTrashCan;
+
     private void Update()
     {
+        if(Time.timeScale == 0f)
+        {
+            walkSound.Stop();
+        }
+
         if(gameManager != null && PauseMenuUI.isPaused == false && gameManager.gameState == GameStateManager.GameState.INGAME)
         {
             inputMovement();
@@ -130,12 +138,19 @@ public class Player : MonoBehaviour
 
         if(nearestPickable != null)
         {
+            if(previousPickable != null && previousPickable != nearestPickable)
+            {
+                previousPickable.HighlightVisual.SetActive(false); //unhighlight previous
+            }
             //highlight nearest object
             nearestPickable.HighlightVisual.SetActive(true);
+            previousPickable = nearestPickable; //update previous pickable
+
             if (Input.GetKeyDown(KeyCode.F))
             {
                 isHolding = true;
                 nearestPickable.PickUp(holdItemContainer.transform);
+                nearestPickable.HighlightVisual.SetActive(false);
                 heldObject = nearestPickable;
                 if (nearestPickable.typeIndex == 1)
                 {
@@ -171,25 +186,38 @@ public class Player : MonoBehaviour
                 if (distance < nearestDistance)
                 {
                     nearestDistance = distance;
-                    nearestTrashCan = trashCan;
+                    if(trashCan.isFilled == false) //only select if trash can is empty
+                    {
+                        nearestTrashCan = trashCan;
+                    }
                 }
             }
         }
 
         if (nearestTrashCan != null)
         {
+            if (previousTrashCan != null && previousTrashCan != nearestTrashCan)
+            {
+                previousTrashCan.HighlightVisual.SetActive(false); // Disable the previous trash can's highlight
+            }
             //highlight nearest trash can
             nearestTrashCan.HighlightVisual.SetActive(true);
+            previousTrashCan = nearestTrashCan; //update previous trash can
+
             if (Input.GetKeyDown(KeyCode.F))
             {
+                nearestTrashCan.isFilled = true;
+                nearestTrashCan.HighlightVisual.SetActive(false);
                 isHolding = false;
                 insertingTrashSound.Play();
                 if(heldObject.typeIndex == nearestTrashCan.typeIndex)
                 {
+                    nearestTrashCan.isCorrect = true;
                     heldObject.throwAwayCorrect();
                 }
                 else
                 {
+                    nearestTrashCan.isCorrect = false;
                     heldObject.throwAwayIncorrect();
                 }
                 

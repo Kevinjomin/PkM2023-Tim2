@@ -25,7 +25,7 @@ public class PickableObject : MonoBehaviour
         // when highlight is active
         if (HighlightVisual != null && HighlightVisual.activeSelf)
         {
-            HighlightVisual.SetActive(false);
+            //HighlightVisual.SetActive(false);
         }
      
     }
