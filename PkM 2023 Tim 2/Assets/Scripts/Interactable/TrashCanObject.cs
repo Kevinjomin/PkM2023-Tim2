@@ -30,10 +30,10 @@ public class TrashCanObject : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Truck"))
         {
-            if(isFilled == true && isCorrect == true)
+            /*if(isFilled == true && isCorrect == true)
             {
                 //test
-            }
+            }*/
             Destroy(gameObject);
         }
     }

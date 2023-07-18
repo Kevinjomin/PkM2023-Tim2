@@ -5,30 +5,17 @@ using UnityEngine;
 public class ConveyorBelt : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private Vector3 direction;
-    [SerializeField] private List<GameObject> onBelt;
+    private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
 
     private void FixedUpdate()
     {
-        for(int i=0; i<onBelt.Count; i++)
-        {
-            if (!onBelt[i])
-            {
-                onBelt.RemoveAt(i);
-                continue;
-            }
-            //add velocity to gameObject on the belt
-            onBelt[i].GetComponent<Rigidbody>().velocity = speed * (transform.forward * 100) * Time.deltaTime;
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    { //when something is on belt
-        onBelt.Add(collision.gameObject);
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        onBelt.Remove(collision.gameObject);
+        Vector3 pos = rb.position;
+        rb.position += -transform.forward * speed * Time.deltaTime;
+        rb.MovePosition(pos);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 589014408658938913}
   - component: {fileID: 2745658939412936793}
   - component: {fileID: 7848894797471083772}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Box (inorganic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 4623194235959230436}
   - component: {fileID: 5091142989704159618}
   - component: {fileID: 5997623438631107937}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Highlight Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
