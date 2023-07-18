@@ -39,6 +39,10 @@ public class LevelManager : MonoBehaviour //May Combine this with Level Manager
         activeLevel.LevelCompleted(rating, score);
         activeLevel = null;
     }
+    public void LevelFailed()
+    {
+        activeLevel = null;
+    }
 
     public List<LevelData> SendToProfile()
     {

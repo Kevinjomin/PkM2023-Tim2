@@ -2996,7 +2996,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4236497, y: -0.000000054361685, z: 0.00000002542465, w: 0.90582615}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
   m_LocalPosition: {x: -18.13, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5324,7 +5324,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962208872}
-  m_LocalRotation: {x: 0.4236497, y: -0.000000054361685, z: 0.00000002542465, w: 0.90582615}
+  m_LocalRotation: {x: 0.4236497, y: -0.000000054361703, z: 0.000000025424658, w: 0.90582615}
   m_LocalPosition: {x: -18.13, y: 8.190001, z: -7.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5514,6 +5514,10 @@ PrefabInstance:
       propertyPath: insertingTrashSound
       value: 
       objectReference: {fileID: 719271333}
+    - target: {fileID: 5350388165918738707, guid: fdc894ca48cf71f45b89d4e5062d1386, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6173833119422829160, guid: fdc894ca48cf71f45b89d4e5062d1386, type: 3}
       propertyPath: m_RootOrder
       value: 2

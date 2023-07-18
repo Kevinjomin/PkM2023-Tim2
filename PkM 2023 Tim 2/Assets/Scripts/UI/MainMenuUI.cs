@@ -20,11 +20,11 @@ public class MainMenuUI : MonoBehaviour
             Loader.Load(Loader.scene.GameScene);
         });*/
 
-        /* // DONT FORGET TO USE THIS IN THE FUTURE
+         // DONT FORGET TO USE THIS IN THE FUTURE
         PlayButton.onClick.AddListener(() =>
         {
             SceneManager.LoadScene(3);
-        });*/
+        });
 
         QuitButton.onClick.AddListener(() =>
         {

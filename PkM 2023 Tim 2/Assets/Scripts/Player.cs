@@ -118,7 +118,6 @@ public class Player : MonoBehaviour
 
     private void pickupObject()
     {
-        
         Collider[] colliders = Physics.OverlapSphere(transform.position, pickupRange);
         PickableObject nearestPickable = null;
         float nearestDistance = Mathf.Infinity;
@@ -234,4 +233,5 @@ public class Player : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, pickupRange);
     }
+    
 }

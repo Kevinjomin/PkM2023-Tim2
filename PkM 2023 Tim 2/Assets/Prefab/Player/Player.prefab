@@ -64,7 +64,7 @@ Transform:
   - {fileID: 2805687074948601237}
   - {fileID: 1846999605152467673}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4091268807824155839
 MonoBehaviour:
@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 5518563378072217941}
   - component: {fileID: 8588199988823300373}
   - component: {fileID: 3618193856668150017}
+  - component: {fileID: 4117239184375744551}
   m_Layer: 0
   m_Name: Player Visual
   m_TagString: Untagged
@@ -299,3 +300,15 @@ CapsuleCollider:
   m_Height: 1.3134751
   m_Direction: 1
   m_Center: {x: -0.0024889198, y: 0.3530849, z: 0}
+--- !u!114 &4117239184375744551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350388165918738707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc302f227270d5c409d38d960dd96ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

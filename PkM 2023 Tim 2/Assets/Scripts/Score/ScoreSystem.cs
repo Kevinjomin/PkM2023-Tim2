@@ -97,5 +97,10 @@ public class ScoreSystem : MonoBehaviour
             ratingUi.WinCondition(true, LevelManager.instance.activeLevel);
             LevelManager.instance.LevelCompleted(rating, score);
         }
+        else
+        {
+            LevelManager.instance.LevelFailed();
+        }
+        Time.timeScale = 1;
     }
 }

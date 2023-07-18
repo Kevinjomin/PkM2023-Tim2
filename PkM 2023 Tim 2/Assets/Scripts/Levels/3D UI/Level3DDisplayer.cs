@@ -13,10 +13,11 @@ public class Level3DDisplayer : MonoBehaviour
     [SerializeField] private TextMeshPro score;
 
     [SerializeField] private GameObject blocker;
-    [SerializeField] private GameObject interact;
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject indicator;
 
     [SerializeField] private Material successStar;
+    [SerializeField] private Material unlocked;
 
     [SerializeField] private List<GameObject> stars = new List<GameObject>();
 
@@ -26,6 +27,14 @@ public class Level3DDisplayer : MonoBehaviour
 
         title.text = levelInfo.GetLevelName();
         score.text = "High Score : " + levelInfo.GetScore();
+
+        panel.SetActive(false);
+        if (info.GetLocked() == false)
+        {
+            blocker.SetActive(false);
+            indicator.GetComponent<MeshRenderer>().material = unlocked;
+        }
+            
 
         RatingChecker();
     }
@@ -39,9 +48,24 @@ public class Level3DDisplayer : MonoBehaviour
             stars[i].GetComponent<MeshRenderer>().material = successStar;
         }
     }
+
     public void SwitchScene()
     {
         LevelManager.instance.activeLevel = levelInfo;
         SceneManager.LoadScene(levelInfo.GetSceneID());
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            panel.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            panel.SetActive(false);
+        }
     }
 }
