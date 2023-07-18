@@ -15,25 +15,26 @@ public class PickableObject : MonoBehaviour
     */
 
     private ScoreSystem scoreSystem;
+    private Rigidbody rb;
 
     private void Start()
     {
         scoreSystem = FindObjectOfType<ScoreSystem>();
+        rb = GetComponent<Rigidbody>();
     }
-    private void Update()
-    {
-        // when highlight is active
-        if (HighlightVisual != null && HighlightVisual.activeSelf)
-        {
-            //HighlightVisual.SetActive(false);
-        }
-     
-    }
+    
     public void PickUp(Transform newParent)
     {
+        deactivateRigidbody();
         transform.SetParent(newParent);
         transform.position = newParent.position;
         transform.rotation = newParent.rotation;
+    }
+
+    public void Drop()
+    {
+        activateRigidbody();
+        transform.SetParent(null);
     }
 
     public void throwAwayCorrect()
@@ -47,5 +48,14 @@ public class PickableObject : MonoBehaviour
     {
         scoreSystem.addWrong();
         Destroy(gameObject);
+    }
+
+    private void deactivateRigidbody()
+    {
+        rb.isKinematic = true;
+    }
+    private void activateRigidbody()
+    {
+        rb.isKinematic = false;
     }
 }

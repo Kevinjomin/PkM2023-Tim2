@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                dropObject();
                 throwObject();
             }
         }
@@ -168,6 +169,15 @@ public class Player : MonoBehaviour
                     pickB3Sound.Play();
                 }
             }
+        }
+    }
+
+    private void dropObject()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isHolding = false;
+            heldObject.Drop();
         }
     }
 

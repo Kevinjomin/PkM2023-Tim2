@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 656913512699555874}
   - component: {fileID: 8750523681420963448}
   - component: {fileID: -1220221309269576055}
+  - component: {fileID: -4634326375366101772}
   m_Layer: 0
   m_Name: Organic (Uncommon)
   m_TagString: Untagged
@@ -296,7 +297,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: -4, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8750523681420963448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,3 +332,30 @@ MonoBehaviour:
     scoreSystem: {fileID: 0}
     rarity: 0
     rarityInt: 0
+--- !u!54 &-4634326375366101772
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6594225706700272519}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
