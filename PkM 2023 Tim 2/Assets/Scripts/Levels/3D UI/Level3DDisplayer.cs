@@ -21,6 +21,8 @@ public class Level3DDisplayer : MonoBehaviour
 
     [SerializeField] private List<GameObject> stars = new List<GameObject>();
 
+    [SerializeField] private Image bar;
+
     public void Initialize(Levels info)
     {
         levelInfo = info;
@@ -33,9 +35,16 @@ public class Level3DDisplayer : MonoBehaviour
         {
             blocker.SetActive(false);
             indicator.GetComponent<MeshRenderer>().material = unlocked;
+            bar.color = unlocked.color;
+
+            Button barButton = bar.gameObject.GetComponent<Button>();
+
+            barButton.onClick.AddListener(() =>
+            {
+                SwitchScene();
+            });
         }
             
-
         RatingChecker();
     }
 
