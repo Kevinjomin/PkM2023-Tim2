@@ -101,6 +101,5 @@ public class ScoreSystem : MonoBehaviour
         {
             LevelManager.instance.LevelFailed();
         }
-        Time.timeScale = 1;
     }
 }

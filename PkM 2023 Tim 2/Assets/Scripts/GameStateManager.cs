@@ -10,7 +10,7 @@ public class GameStateManager : MonoBehaviour
 
     [SerializeField] private ScoreSystem scoreSystem;
 
-    public bool noninlevel;
+    public bool notinlevel;
 
     public enum GameState
     {
@@ -22,12 +22,14 @@ public class GameStateManager : MonoBehaviour
 
     private void Awake()
     {
-        if (!noninlevel)
+        if (!notinlevel)
             ChangeState(0);
+        else
+            Time.timeScale = 1f;
     }
     private void Update()
     {
-        if (noninlevel)
+        if (notinlevel)
         {
             return;
         }
