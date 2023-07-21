@@ -19,6 +19,7 @@ public class PauseMenuUI : MonoBehaviour
             Time.timeScale = 1f;
             isPaused = false;
             Loader.Load(Loader.scene.MainMenuScene);
+            LevelManager.instance.LevelFailed();
         });
     }
 
