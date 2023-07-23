@@ -7,6 +7,7 @@ public class PauseMenuUI : MonoBehaviour
 {
     [SerializeField] private Button MenuButton;
     [SerializeField] private GameStateManager gameManager;
+    [SerializeField] private GameObject settingsUI;
 
     public static bool isPaused = false;
     public GameObject pauseMenu;
@@ -42,7 +43,6 @@ public class PauseMenuUI : MonoBehaviour
                 }
             }
         }
-        
     }
 
     public void Resume()
@@ -57,6 +57,7 @@ public class PauseMenuUI : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        settingsUI.SetActive(false);
     }
 
 
