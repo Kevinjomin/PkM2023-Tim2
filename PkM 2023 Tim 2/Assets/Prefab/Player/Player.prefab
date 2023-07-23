@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1846999605152467673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hold Item Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6173833119422829160}
   - component: {fileID: 4091268807824155839}
-  m_Layer: 0
+  - component: {fileID: 5833979052734808376}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -64,7 +65,7 @@ Transform:
   - {fileID: 2805687074948601237}
   - {fileID: 1846999605152467673}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4091268807824155839
 MonoBehaviour:
@@ -87,6 +88,33 @@ MonoBehaviour:
   pickInorganicSound: {fileID: 0}
   pickB3Sound: {fileID: 0}
   gameManager: {fileID: 0}
+--- !u!54 &5833979052734808376
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3748166946232265960}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &4799437068841085012
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,7 +127,7 @@ GameObject:
   - component: {fileID: 6486557641886116780}
   - component: {fileID: 20863127436180295}
   - component: {fileID: 6694299978122236480}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Container Visualizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,9 +233,9 @@ GameObject:
   - component: {fileID: 8588199988823300373}
   - component: {fileID: 3618193856668150017}
   - component: {fileID: 4117239184375744551}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player Visual
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,7 +322,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.42611682
   m_Height: 1.3134751
