@@ -1371,7 +1371,7 @@ MonoBehaviour:
   NextPage: {fileID: 158561582}
   menuTitle: {fileID: 1073566355}
   menuDesc: {fileID: 940517619}
-  LeftPage: {fileID: 320200549}
+  LeftPage: {fileID: 512070057}
 --- !u!4 &246886446
 Transform:
   m_ObjectHideFlags: 0
@@ -1945,7 +1945,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 512070058}
   m_Father: {fileID: 1385969007}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2747,6 +2748,42 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &512070057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512070058}
+  m_Layer: 5
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &512070058
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512070057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 320200550}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 534.307, y: 614.06}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &536957154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3921,7 +3958,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701914760
@@ -4788,8 +4825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -78.2}
-  m_SizeDelta: {x: 300, y: 500}
+  m_AnchoredPosition: {x: 13.086, y: 5.383}
+  m_SizeDelta: {x: 522.47, y: 435.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &940517618
 CanvasRenderer:
@@ -5056,8 +5093,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 260}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: 13.089, y: 266.54}
+  m_SizeDelta: {x: 522.4755, y: 86.9132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1073566354
 CanvasRenderer:
@@ -7388,7 +7425,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 17.350037, y: -87.70004}
+  m_AnchoredPosition: {x: 17.350098, y: -87.70007}
   m_SizeDelta: {x: 191, y: 59}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1525252762
@@ -7605,47 +7642,164 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectibles:
-  - id: 1
-    itemName: Organic Trash (Common)
-    itemDesc: Rotten
+  - id: 0
+    itemName: Ranting Pohon
+    itemDesc: Placeholder
     rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
-    collected: 1
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
+  - id: 1
+    itemName: Kulit Pisang
+    itemDesc: Placeholder
+    rarity: 0
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
   - id: 2
-    itemName: Organic Trash (Uncommon)
-    itemDesc: Rat Food
-    rarity: 1
+    itemName: Kulit Jeruk
+    itemDesc: Placeholder
+    rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 8c4ec32260caab24289302d08ff46a81, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
   - id: 3
-    itemName: Organic Trash (Rare)
-    itemDesc: Poisonous Object
-    rarity: 2
+    itemName: Kulit Telur
+    itemDesc: Placeholder
+    rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: bf24fbd84f187094197a53e4dd3efd10, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
   - id: 4
-    itemName: Inorganic Trash (Common)
-    itemDesc: Junk
+    itemName: Daun Kering
+    itemDesc: Placeholder
+    rarity: 0
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
+  - id: 5
+    itemName: Rumput
+    itemDesc: Placeholder
+    rarity: 0
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
+  - id: 6
+    itemName: Plastik
+    itemDesc: Placeholder
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+  - id: 7
+    itemName: Styrofoam
+    itemDesc: Placeholder
     rarity: 0
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
-  - id: 5
-    itemName: Electronic Trash (Common)
-    itemDesc: Broken
+  - id: 8
+    itemName: Kain Bekas
+    itemDesc: Placeholder
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+  - id: 9
+    itemName: Botol
+    itemDesc: Placeholder
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+  - id: 10
+    itemName: Kaleng Minuman
+    itemDesc: Placeholder
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+  - id: 11
+    itemName: Kardus
+    itemDesc: Placeholder
+    rarity: 0
+    type: 1
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+  - id: 12
+    itemName: Baterai Bekas
+    itemDesc: Placeholder
     rarity: 0
     type: 2
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+  - id: 13
+    itemName: Lampu
+    itemDesc: Placeholder
+    rarity: 0
+    type: 2
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+  - id: 14
+    itemName: HP Rusak
+    itemDesc: Placeholder
+    rarity: 0
+    type: 2
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 0}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+  - id: 15
+    itemName: TV Rusak
+    itemDesc: Placeholder
+    rarity: 0
+    type: 2
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+  - id: 16
+    itemName: Kabel
+    itemDesc: Placeholder
+    rarity: 0
+    type: 0
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+  - id: 17
+    itemName: Aki
+    itemDesc: Placeholder
+    rarity: 0
+    type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0

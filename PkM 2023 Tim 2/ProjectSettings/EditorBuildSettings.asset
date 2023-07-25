@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 7470721d2cee21e4daca0fc5b00de086
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/LevelChangeScene.unity
