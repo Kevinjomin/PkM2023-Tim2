@@ -8,7 +8,7 @@ public class BoxSpawner : MonoBehaviour
 
     [Header("Make sure spawnChance and boxList have same length")]
     public GameObject[] boxList;
-    [SerializeField] [Range(0, 1)] public float[] spawnChance; //spawn chance for each box
+    [SerializeField] public float[] spawnChance; //spawn chance for each box
 
 
     private void Start()
