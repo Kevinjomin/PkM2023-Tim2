@@ -9708,6 +9708,10 @@ MonoBehaviour:
   - {fileID: 6638256441405227907, guid: 32dca7805908d7d46920c67ef1aba9f8, type: 3}
   - {fileID: 986395401918315141, guid: a64016326c4151a45960a696850706fc, type: 3}
   - {fileID: 2520732486274365144, guid: 44fdc640aab76274695113c4cc47f7ae, type: 3}
+  spawnChance:
+  - 1
+  - 0
+  - 0
 --- !u!1 &1666214499
 GameObject:
   m_ObjectHideFlags: 0
