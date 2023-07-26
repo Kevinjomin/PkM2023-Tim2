@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HighlightVisual: {fileID: 6461247396571672116}
-  typeIndex: 3
+  typeIndex: 1
 --- !u!114 &-1220221309269576055
 MonoBehaviour:
   m_ObjectHideFlags: 0

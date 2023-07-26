@@ -6,6 +6,7 @@ public class PickableObject : MonoBehaviour
 {
     [SerializeField] public GameObject HighlightVisual;
     //[SerializeField] public int ScoreValue;
+    [Header("Trash type index : 1.organic, 2.non organic, 3.electronic")]
     [SerializeField] public int typeIndex;
     /*
     Trash type index :
