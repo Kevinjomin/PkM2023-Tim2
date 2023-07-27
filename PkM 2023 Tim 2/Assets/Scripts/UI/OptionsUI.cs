@@ -24,17 +24,23 @@ public class OptionsUI : MonoBehaviour
 
     private void Start()
     {
-        resolutions = Screen.resolutions;
+        resolutions = new Resolution[]
+        {
+            new Resolution { width = 1920, height = 1080 },
+            new Resolution { width = 1600, height = 900 },
+            new Resolution { width = 1280, height = 720 }
+        };
+
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
         int currentResolutionIndex = 0;
 
         // iteration to determine the current resolution
-        for(int i=0; i<resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
-            if(resolutions[i].width == Screen.currentResolution.width && 
+            if (resolutions[i].width == Screen.currentResolution.width &&
                 resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
