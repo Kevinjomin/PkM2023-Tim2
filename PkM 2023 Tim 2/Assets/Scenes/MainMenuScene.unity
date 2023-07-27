@@ -7686,7 +7686,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 05315f90563b8634287da5b956fb1ac1, type: 3}
   - id: 5
     itemName: Rumput
     itemDesc: Placeholder
@@ -7695,7 +7695,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 4a2f071e958177c4ab782df9489220f3, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 384862d4e8b8ecf4abba625bc85c3b92, type: 3}
   - id: 6
     itemName: Plastik
     itemDesc: Placeholder
@@ -7704,7 +7704,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 05315f90563b8634287da5b956fb1ac1, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
   - id: 7
     itemName: Styrofoam
     itemDesc: Placeholder
@@ -7722,7 +7722,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 00a419c18b7075d4e9402e1681bcb7a4, type: 3}
   - id: 9
     itemName: Botol
     itemDesc: Placeholder
@@ -7731,7 +7731,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
   - id: 10
     itemName: Kaleng Minuman
     itemDesc: Placeholder
@@ -7749,7 +7749,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
   - id: 12
     itemName: Baterai Bekas
     itemDesc: Placeholder
@@ -7758,7 +7758,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 88405cbc1979b234d962d60e1c375b35, type: 3}
   - id: 13
     itemName: Lampu
     itemDesc: Placeholder
@@ -7767,7 +7767,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 87a9e4e313079524f8d0d37543214e9d, type: 3}
   - id: 14
     itemName: HP Rusak
     itemDesc: Placeholder
@@ -7794,7 +7794,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 53cf888175b82d6439f09befc062f8b1, type: 3}
   - id: 17
     itemName: Aki
     itemDesc: Placeholder
@@ -7803,7 +7803,7 @@ MonoBehaviour:
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 919d207b60f68f04fa73c9c56a23ec4f, type: 3}
 --- !u!4 &1563116359
 Transform:
   m_ObjectHideFlags: 0
