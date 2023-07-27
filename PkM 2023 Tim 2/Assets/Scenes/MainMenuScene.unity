@@ -7593,25 +7593,25 @@ MonoBehaviour:
     score: 4
     locked: 0
     nextLevelID: 1
-    sceneID: 2
+    sceneID: 3
   - levelName: Inorganic Trash
     rating: 0
     score: 0
     locked: 1
     nextLevelID: 2
-    sceneID: 2
+    sceneID: 4
   - levelName: Electronic Trash
     rating: 0
     score: 0
     locked: 1
     nextLevelID: 3
-    sceneID: 2
+    sceneID: 5
   - levelName: Level 1
     rating: 0
     score: 0
     locked: 1
     nextLevelID: 0
-    sceneID: 2
+    sceneID: 6
 --- !u!1 &1563116357
 GameObject:
   m_ObjectHideFlags: 0

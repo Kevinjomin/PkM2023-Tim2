@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 7470721d2cee21e4daca0fc5b00de086
   - enabled: 1
+    path: Assets/Scenes/LevelChangeScene.unity
+    guid: 9f14ebb8b08556b449c58b9274be9755
+  - enabled: 1
     path: Assets/Scenes/Level 1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/LevelChangeScene.unity
-    guid: 9f14ebb8b08556b449c58b9274be9755
+    path: Assets/Scenes/Level 2.unity
+    guid: e05d8da63a856734ea10e9f2700ec9d6
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: fbc1b81b08bba0d4ba46b1cc390d3eda
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 46ed2ecbf38518e4689a6695b6bf4421
   m_configObjects: {}
