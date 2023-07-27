@@ -54,7 +54,8 @@ public class Level3DDisplayer : MonoBehaviour
 
         for (int i = 0; i < rating; i++)
         {
-            stars[i].GetComponent<MeshRenderer>().material = successStar;
+            //stars[i].GetComponent<MeshRenderer>().material = successStar;
+            stars[i].SetActive(true);
         }
     }
 
