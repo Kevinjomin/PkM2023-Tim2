@@ -12550,7 +12550,7 @@ MonoBehaviour:
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: d136099e8f567794abce64ec8b486b4b, type: 3}
   - id: 8
     itemName: Dirty Rag
     itemDesc: Non-organic. You have no idea how did it get that dirty, perhaps you
@@ -12570,7 +12570,7 @@ MonoBehaviour:
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 6ef64715b31315e49959d8f4deb9dd21, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 766cf882c4aef1b48b423325f1dc5afe, type: 3}
   - id: 10
     itemName: Can
     itemDesc: Non-organic. Made from aluminium, more durable than the plastic bottle,
@@ -12620,7 +12620,7 @@ MonoBehaviour:
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 4c6f8c6b83d2f894e86bfb566a2cbf22, type: 3}
   - id: 15
     itemName: Run-Down TV
     itemDesc: B3. How did we get here?
@@ -12629,7 +12629,7 @@ MonoBehaviour:
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
+    mapObject: {fileID: 6594225706700272519, guid: 0860afff12ed5204f9bbb3006afaa605, type: 3}
   - id: 16
     itemName: Cable
     itemDesc: B3. Can connect many electric things, making them work properly. Comes
