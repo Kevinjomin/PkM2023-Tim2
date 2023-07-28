@@ -10868,7 +10868,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectibles:
   - id: 0
-    itemName: Ranting Pohon
+    itemName: Tree Branch
     itemDesc: Placeholder
     rarity: 0
     type: 0
@@ -10877,34 +10877,34 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 6e812106469e4744f8f49b1117e11b05, type: 3}
   - id: 1
-    itemName: Kulit Pisang
+    itemName: Banana Peel
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: fab77583ad07ec941bf70df65c583ef5, type: 3}
   - id: 2
-    itemName: Kulit Jeruk
+    itemName: Orange Peel
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 2
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 30895711a6b0564438ea6d968062adaf, type: 3}
   - id: 3
-    itemName: Kulit Telur
+    itemName: Egg Shell
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 034bef0a9dc5d454199e532cb33d8af0, type: 3}
   - id: 4
-    itemName: Daun Kering
+    itemName: Dried Leaf
     itemDesc: Placeholder
     rarity: 0
     type: 0
@@ -10913,7 +10913,7 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 05315f90563b8634287da5b956fb1ac1, type: 3}
   - id: 5
-    itemName: Rumput
+    itemName: Grass
     itemDesc: Placeholder
     rarity: 0
     type: 0
@@ -10922,7 +10922,7 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 384862d4e8b8ecf4abba625bc85c3b92, type: 3}
   - id: 6
-    itemName: Plastik
+    itemName: Plastic Bag
     itemDesc: Placeholder
     rarity: 0
     type: 1
@@ -10940,16 +10940,16 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
   - id: 8
-    itemName: Kain Bekas
+    itemName: Rag Cloth
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 00a419c18b7075d4e9402e1681bcb7a4, type: 3}
   - id: 9
-    itemName: Botol
+    itemName: Plastic Bottle
     itemDesc: Placeholder
     rarity: 0
     type: 1
@@ -10958,25 +10958,25 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
   - id: 10
-    itemName: Kaleng Minuman
+    itemName: Can
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
   - id: 11
-    itemName: Kardus
+    itemName: Cardboard Box
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 2
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
   - id: 12
-    itemName: Baterai Bekas
+    itemName: AAA Battery
     itemDesc: Placeholder
     rarity: 0
     type: 2
@@ -10987,43 +10987,43 @@ MonoBehaviour:
   - id: 13
     itemName: Lampu
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 87a9e4e313079524f8d0d37543214e9d, type: 3}
   - id: 14
-    itemName: HP Rusak
+    itemName: Broken Phone
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 0}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
   - id: 15
-    itemName: TV Rusak
+    itemName: Run-Down TV
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 2
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
   - id: 16
-    itemName: Kabel
+    itemName: Cable
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 53cf888175b82d6439f09befc062f8b1, type: 3}
   - id: 17
-    itemName: Aki
+    itemName: Car Battery
     itemDesc: Placeholder
-    rarity: 0
+    rarity: 2
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
