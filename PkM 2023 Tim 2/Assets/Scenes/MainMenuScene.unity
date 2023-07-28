@@ -12362,8 +12362,14 @@ MonoBehaviour:
     rating: 0
     score: 0
     locked: 1
-    nextLevelID: 0
+    nextLevelID: 4
     sceneID: 6
+  - levelName: Last Level
+    rating: 0
+    score: 0
+    locked: 1
+    nextLevelID: 0
+    sceneID: 7
 --- !u!1 &1535396586
 GameObject:
   m_ObjectHideFlags: 0
