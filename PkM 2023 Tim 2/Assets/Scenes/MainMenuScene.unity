@@ -12548,7 +12548,7 @@ MonoBehaviour:
     rarity: 0
     type: 1
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: d910e9fb8250e0f44938709e70de80ec, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: d136099e8f567794abce64ec8b486b4b, type: 3}
   - id: 8
@@ -12618,7 +12618,7 @@ MonoBehaviour:
     rarity: 1
     type: 2
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 714feddb3bd12944d826e2fba08f3d18, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 4c6f8c6b83d2f894e86bfb566a2cbf22, type: 3}
   - id: 15
@@ -12627,7 +12627,7 @@ MonoBehaviour:
     rarity: 2
     type: 2
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    unlockedImage: {fileID: 21300000, guid: c20a0477bf959364b87c04f9589cae16, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 0860afff12ed5204f9bbb3006afaa605, type: 3}
   - id: 16
