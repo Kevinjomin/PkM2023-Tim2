@@ -36,7 +36,7 @@ public class Level3DDisplayer : MonoBehaviour
         {
             blocker.SetActive(false);
             indicator.GetComponent<MeshRenderer>().material = unlocked;
-            bar.color = unlockedBar.color;
+            bar.color = Color.green;
 
             Button barButton = bar.gameObject.GetComponent<Button>();
 

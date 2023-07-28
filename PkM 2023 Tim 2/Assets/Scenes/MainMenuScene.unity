@@ -8921,7 +8921,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To pick up trash, press the F key on your keyboard.
+  m_text: To pick up trash, press the F key on your keyboard. The F key can also
+    be used to enter a level.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1da9489536d3c2146b61f56bd471f122, type: 2}
   m_sharedMaterial: {fileID: 5936217928591840967, guid: 1da9489536d3c2146b61f56bd471f122, type: 2}
@@ -12345,13 +12346,13 @@ MonoBehaviour:
     locked: 0
     nextLevelID: 1
     sceneID: 3
-  - levelName: Inorganic Trash
+  - levelName: Non-Organic Trash
     rating: 0
     score: 0
     locked: 1
     nextLevelID: 2
     sceneID: 4
-  - levelName: Electronic Trash
+  - levelName: B3 Trash
     rating: 0
     score: 0
     locked: 1
