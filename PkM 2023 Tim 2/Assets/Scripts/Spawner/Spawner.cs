@@ -150,6 +150,11 @@ public class Spawner : MonoBehaviour
         if (list.Count == 0)
             ChooseObject();
 
+        if (list.Count == 1)
+        {
+            SpawnObject(list[0]);
+            return;
+        }
         int chance = Random.Range(0, list.Count);
         SpawnObject(list[chance]);
     }
