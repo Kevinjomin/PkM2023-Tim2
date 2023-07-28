@@ -6737,7 +6737,7 @@ MonoBehaviour:
     Dave Edmund Daniel
 
     Gede
-    Bramanta Pandya Winesa
+    Bramanta Pandya Wisesa
 
 
 
@@ -12133,7 +12133,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 17.350098, y: -87.70007}
-  m_SizeDelta: {x: 191, y: 59}
+  m_SizeDelta: {x: 196, y: 65}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1525252762
 MonoBehaviour:
@@ -12147,8 +12147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c0789e635607f24f8ded2353349679f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultSprite: {fileID: -1624227547, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
-  hoverSprite: {fileID: -1305126490, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
+  defaultSprite: {fileID: -1305126490, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
+  hoverSprite: {fileID: -1624227547, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
 --- !u!114 &1525252763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12225,7 +12225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1624227547, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
+  m_Sprite: {fileID: -1305126490, guid: cce033226448b4b478d8e55cbb459c13, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

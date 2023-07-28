@@ -22,12 +22,12 @@ public class CreditsButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public void OnPointerEnter(PointerEventData eventData)
     {
         buttonImage.sprite = hoverSprite;
-        buttonRectTransform.sizeDelta = new Vector2(196f, 65f);
+        buttonRectTransform.sizeDelta = new Vector2(191f, 59f);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         buttonImage.sprite = defaultSprite;
-        buttonRectTransform.sizeDelta = new Vector2(191f, 59f);
+        buttonRectTransform.sizeDelta = new Vector2(196f, 65f);
     }
 }
