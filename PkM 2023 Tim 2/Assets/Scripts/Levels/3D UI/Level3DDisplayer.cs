@@ -18,6 +18,7 @@ public class Level3DDisplayer : MonoBehaviour
 
     [SerializeField] private Material successStar;
     [SerializeField] private Material unlocked;
+    [SerializeField] private Material unlockedBar;
 
     [SerializeField] private List<GameObject> stars = new List<GameObject>();
 
@@ -35,7 +36,7 @@ public class Level3DDisplayer : MonoBehaviour
         {
             blocker.SetActive(false);
             indicator.GetComponent<MeshRenderer>().material = unlocked;
-            bar.color = unlocked.color;
+            bar.color = unlockedBar.color;
 
             Button barButton = bar.gameObject.GetComponent<Button>();
 
