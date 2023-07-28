@@ -12466,70 +12466,78 @@ MonoBehaviour:
   collectibles:
   - id: 0
     itemName: Tree Branch
-    itemDesc: Placeholder
+    itemDesc: Organic. Commonly found where there is tree. The older the tree, the
+      more tree branch you will see lying around.
     rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7cef3503a2c46634eaa6b244b1d43225, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 6e812106469e4744f8f49b1117e11b05, type: 3}
   - id: 1
     itemName: Banana Peel
-    itemDesc: Placeholder
+    itemDesc: Organic. Used to be full of antioxidants, not so much anymore. Did
+      you know that Banana is considered as a berry?
     rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 964068ef467d88c4abf8196e156af382, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: fab77583ad07ec941bf70df65c583ef5, type: 3}
   - id: 2
     itemName: Orange Peel
-    itemDesc: Placeholder
+    itemDesc: Organic. Used to have so much Vitamin C that a single Orange can fulfill
+      the preferred Vitamin C intake in a day.
     rarity: 2
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7cef3503a2c46634eaa6b244b1d43225, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 30895711a6b0564438ea6d968062adaf, type: 3}
   - id: 3
     itemName: Egg Shell
-    itemDesc: Placeholder
+    itemDesc: Organic. Once was full of life, but considering how the shell ended
+      up here, perhaps it made someone's stomach full instead.
     rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: f9658ed3b10d0c44494496eef8cecd5d, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 034bef0a9dc5d454199e532cb33d8af0, type: 3}
   - id: 4
     itemName: Dried Leaf
-    itemDesc: Placeholder
+    itemDesc: 'Organic. Commonly found where there is tree. If you don''t sweep them
+      daily, you''re gonna get overwhelmed by it. '
     rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: e542093058d4643489ea7274a7ccd755, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 05315f90563b8634287da5b956fb1ac1, type: 3}
   - id: 5
     itemName: Grass
-    itemDesc: Placeholder
+    itemDesc: Organic. You can see them everywhere. Good for herbivores, and also
+      good for your eyes.
     rarity: 0
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: ab30bfbd6af0ceb4ab3e2072149690f3, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 7f969d4d15ed86742b42bc52912f137c, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 384862d4e8b8ecf4abba625bc85c3b92, type: 3}
   - id: 6
     itemName: Plastic Bag
-    itemDesc: Placeholder
+    itemDesc: Non-organic. Makes a very loud sound when you grab it. Who knows what
+      is left inside?
     rarity: 0
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: dac36c32432243a4880b092015815368, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
   - id: 7
     itemName: Styrofoam
-    itemDesc: Placeholder
+    itemDesc: Non-organic. Great as food container and insulator, just not so great
+      for your health.
     rarity: 0
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
@@ -12537,71 +12545,78 @@ MonoBehaviour:
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
   - id: 8
-    itemName: Rag Cloth
-    itemDesc: Placeholder
+    itemName: Dirty Rag
+    itemDesc: Non-organic. You have no idea how did it get that dirty, perhaps you
+      don't want to know.
     rarity: 1
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: c3b143f7feaebc1408c9493bcc79cc24, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 00a419c18b7075d4e9402e1681bcb7a4, type: 3}
   - id: 9
     itemName: Plastic Bottle
-    itemDesc: Placeholder
+    itemDesc: Non-organic. Comes in many variants and size. Weight also varies depending
+      on how much water is left inside.
     rarity: 0
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 6ef64715b31315e49959d8f4deb9dd21, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
   - id: 10
     itemName: Can
-    itemDesc: Placeholder
+    itemDesc: Non-organic. Made from aluminium, more durable than the plastic bottle,
+      also 100% recyclable.
     rarity: 1
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: f663f6fa842a96f48812c8397322827b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
   - id: 11
     itemName: Cardboard Box
-    itemDesc: Placeholder
+    itemDesc: Non-organic. You could know what is originally inside just by looking
+      at it.
     rarity: 2
     type: 1
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 17a8658a28dca1f499d64c816b29e658, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
   - id: 12
     itemName: AAA Battery
-    itemDesc: Placeholder
+    itemDesc: B3. Despite the small look, it can power many electronic things for
+      a good amount of time.
     rarity: 0
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 5ef204db58bf6314198465eb6b674ba2, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 88405cbc1979b234d962d60e1c375b35, type: 3}
   - id: 13
     itemName: Lampu
-    itemDesc: Placeholder
+    itemDesc: B3. Used to shine brightly, very useful to light up the darkness. Looking
+      from its condition, it may have stopped working.
+    rarity: 1
+    type: 2
+    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 34d008985772ac04dbf6ce2245a8daaf, type: 3}
+    collected: 0
+    mapObject: {fileID: 6594225706700272519, guid: 87a9e4e313079524f8d0d37543214e9d, type: 3}
+  - id: 14
+    itemName: Broken Phone
+    itemDesc: B3. A working phone would be an everyday sight, but a broken phone
+      would have little to no worth anymore.
     rarity: 1
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
-    mapObject: {fileID: 6594225706700272519, guid: 87a9e4e313079524f8d0d37543214e9d, type: 3}
-  - id: 14
-    itemName: Broken Phone
-    itemDesc: Placeholder
-    rarity: 1
-    type: 2
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 0}
-    collected: 0
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
   - id: 15
     itemName: Run-Down TV
-    itemDesc: Placeholder
+    itemDesc: B3. How did we get here?
     rarity: 2
     type: 2
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
@@ -12610,20 +12625,22 @@ MonoBehaviour:
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
   - id: 16
     itemName: Cable
-    itemDesc: Placeholder
+    itemDesc: B3. Can connect many electric things, making them work properly. Comes
+      in many size and function.
     rarity: 1
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    unlockedImage: {fileID: 21300000, guid: c93cac23c5385ac47bd4845e7d2ff988, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 53cf888175b82d6439f09befc062f8b1, type: 3}
   - id: 17
     itemName: Car Battery
-    itemDesc: Placeholder
+    itemDesc: B3. May have ran out of power, just need to be recharged to have it
+      be back on business.
     rarity: 2
     type: 0
     lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 684c9b2e327deb14aaa7dbec42537463, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 919d207b60f68f04fa73c9c56a23ec4f, type: 3}
 --- !u!4 &1563116359
