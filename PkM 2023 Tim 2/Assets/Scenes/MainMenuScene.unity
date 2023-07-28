@@ -3814,7 +3814,7 @@ MonoBehaviour:
 
     Non-organic
 
-    Electronic'
+    B3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1da9489536d3c2146b61f56bd471f122, type: 2}
   m_sharedMaterial: {fileID: 5936217928591840967, guid: 1da9489536d3c2146b61f56bd471f122, type: 2}
@@ -5041,14 +5041,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7838347, g: 0.7924528, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2118899609, guid: 88105171d95f3ad479dbd1817d2c1913, type: 3}
+  m_Sprite: {fileID: 1929102750, guid: 858d5a7f6c415eb49a4481714e829eb0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10299,14 +10299,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6792453, g: 0.078000486, b: 0.008971129, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2118899609, guid: 88105171d95f3ad479dbd1817d2c1913, type: 3}
+  m_Sprite: {fileID: 1709763502, guid: 858d5a7f6c415eb49a4481714e829eb0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12477,7 +12477,7 @@ MonoBehaviour:
       more tree branch you will see lying around.
     rarity: 0
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7cef3503a2c46634eaa6b244b1d43225, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 6e812106469e4744f8f49b1117e11b05, type: 3}
@@ -12487,7 +12487,7 @@ MonoBehaviour:
       you know that Banana is considered as a berry?
     rarity: 1
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 964068ef467d88c4abf8196e156af382, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: fab77583ad07ec941bf70df65c583ef5, type: 3}
@@ -12497,7 +12497,7 @@ MonoBehaviour:
       the preferred Vitamin C intake in a day.
     rarity: 2
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7cef3503a2c46634eaa6b244b1d43225, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 30895711a6b0564438ea6d968062adaf, type: 3}
@@ -12507,7 +12507,7 @@ MonoBehaviour:
       up here, perhaps it made someone's stomach full instead.
     rarity: 1
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: f9658ed3b10d0c44494496eef8cecd5d, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 034bef0a9dc5d454199e532cb33d8af0, type: 3}
@@ -12517,7 +12517,7 @@ MonoBehaviour:
       daily, you''re gonna get overwhelmed by it. '
     rarity: 0
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: e542093058d4643489ea7274a7ccd755, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 05315f90563b8634287da5b956fb1ac1, type: 3}
@@ -12527,7 +12527,7 @@ MonoBehaviour:
       good for your eyes.
     rarity: 0
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7f969d4d15ed86742b42bc52912f137c, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 384862d4e8b8ecf4abba625bc85c3b92, type: 3}
@@ -12537,7 +12537,7 @@ MonoBehaviour:
       is left inside?
     rarity: 0
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: dac36c32432243a4880b092015815368, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
@@ -12547,7 +12547,7 @@ MonoBehaviour:
       for your health.
     rarity: 0
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 7393fdaae08cf9042823d5cf311aac2a, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
@@ -12557,7 +12557,7 @@ MonoBehaviour:
       don't want to know.
     rarity: 1
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: c3b143f7feaebc1408c9493bcc79cc24, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 00a419c18b7075d4e9402e1681bcb7a4, type: 3}
@@ -12567,7 +12567,7 @@ MonoBehaviour:
       on how much water is left inside.
     rarity: 0
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 6ef64715b31315e49959d8f4deb9dd21, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 26e6d11c8bcf5ed43b2ab393ca30fd70, type: 3}
@@ -12577,7 +12577,7 @@ MonoBehaviour:
       also 100% recyclable.
     rarity: 1
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: f663f6fa842a96f48812c8397322827b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 21d69cc0fdd1a454cb6719a72957899f, type: 3}
@@ -12587,7 +12587,7 @@ MonoBehaviour:
       at it.
     rarity: 2
     type: 1
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 17a8658a28dca1f499d64c816b29e658, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: a7f4d749bc0e43749b3a9fbe2b79e0e3, type: 3}
@@ -12597,7 +12597,7 @@ MonoBehaviour:
       a good amount of time.
     rarity: 0
     type: 2
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 5ef204db58bf6314198465eb6b674ba2, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 88405cbc1979b234d962d60e1c375b35, type: 3}
@@ -12607,7 +12607,7 @@ MonoBehaviour:
       from its condition, it may have stopped working.
     rarity: 1
     type: 2
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 34d008985772ac04dbf6ce2245a8daaf, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 87a9e4e313079524f8d0d37543214e9d, type: 3}
@@ -12617,7 +12617,7 @@ MonoBehaviour:
       would have little to no worth anymore.
     rarity: 1
     type: 2
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
@@ -12626,7 +12626,7 @@ MonoBehaviour:
     itemDesc: B3. How did we get here?
     rarity: 2
     type: 2
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 8cc2a389f4217854ab4b3e7f20b9849b, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: b0d05a96aed20fd47b82993e3a9cf9b8, type: 3}
@@ -12636,7 +12636,7 @@ MonoBehaviour:
       in many size and function.
     rarity: 1
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: c93cac23c5385ac47bd4845e7d2ff988, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 53cf888175b82d6439f09befc062f8b1, type: 3}
@@ -12646,7 +12646,7 @@ MonoBehaviour:
       be back on business.
     rarity: 2
     type: 0
-    lockedImage: {fileID: 21300000, guid: 16730cf69efd2a348845a82bc7b35166, type: 3}
+    lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
     unlockedImage: {fileID: 21300000, guid: 684c9b2e327deb14aaa7dbec42537463, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 919d207b60f68f04fa73c9c56a23ec4f, type: 3}
@@ -14014,14 +14014,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.113687225, g: 0.745283, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2118899609, guid: 88105171d95f3ad479dbd1817d2c1913, type: 3}
+  m_Sprite: {fileID: 1859693512, guid: 858d5a7f6c415eb49a4481714e829eb0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
