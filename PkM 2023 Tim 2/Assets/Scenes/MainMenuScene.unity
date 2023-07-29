@@ -12478,7 +12478,7 @@ MonoBehaviour:
     rarity: 0
     type: 0
     lockedImage: {fileID: -962859526, guid: 55951499e5026ac41927be9fa8913c2b, type: 3}
-    unlockedImage: {fileID: 21300000, guid: 7cef3503a2c46634eaa6b244b1d43225, type: 3}
+    unlockedImage: {fileID: 21300000, guid: 43b239c06498ffa4f81e51d422f830d4, type: 3}
     collected: 0
     mapObject: {fileID: 6594225706700272519, guid: 6e812106469e4744f8f49b1117e11b05, type: 3}
   - id: 1
