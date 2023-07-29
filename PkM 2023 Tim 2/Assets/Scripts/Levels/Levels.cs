@@ -20,7 +20,7 @@ public class Levels
 
     [SerializeField] private int nextLevelID;  // Can be List but singular for now
     [SerializeField] private int sceneID;
-    private Levels nextLevel;
+    public Levels nextLevel;
 
     public void InitializeLevel(Levels nextLevel)
     {

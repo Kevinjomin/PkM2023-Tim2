@@ -52,6 +52,6 @@ public class RatingUI : MonoBehaviour
     {
         SaveManager.instance.SaveGame();
         LevelManager.instance.activeLevel = nextLevel;
-        SceneManager.LoadScene(nextLevel.GetSceneID());
+        SceneManager.LoadScene(nextLevel.GetSceneID());        
     }
 }

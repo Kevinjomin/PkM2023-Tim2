@@ -33,11 +33,12 @@ public class GameStateManager : MonoBehaviour
         {
             return;
         }
-        if (Input.GetKeyDown(KeyCode.L)) // FOR TESTING PURPOSES
-            ChangeState(2);
         if (scoreSystem.trashToCollect <= 0)
+        {
+            if ((int)gameState == 2)
+                return;
             ChangeState(2);
-
+        }
     }
     public void ChangeState(int state)
     {
