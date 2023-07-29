@@ -94,6 +94,7 @@ public class ScoreSystem : MonoBehaviour
 
         if (rating > 0) // If Win
         {
+            manager.UpdateCompendium();
             ratingUi.WinCondition(true, LevelManager.instance.activeLevel, score, rating);
         }
         else
