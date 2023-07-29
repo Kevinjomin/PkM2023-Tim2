@@ -22,7 +22,7 @@ public class LevelSceneManager : MonoBehaviour
         for (int i = 0; i < levels.Count; i++)
         {
             if (levels[i].GetLocked() == false)
-                unlockedBar.fillAmount += 0.25f;
+                unlockedBar.fillAmount += 0.20f;
 
             this.levels[i].GetComponent<Level3DDisplayer>().Initialize(levels[i]);
         }

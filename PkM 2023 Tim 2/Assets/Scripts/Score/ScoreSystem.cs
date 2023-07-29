@@ -94,8 +94,7 @@ public class ScoreSystem : MonoBehaviour
 
         if (rating > 0) // If Win
         {
-            ratingUi.WinCondition(true, LevelManager.instance.activeLevel);
-            LevelManager.instance.LevelCompleted(rating, score);
+            ratingUi.WinCondition(true, LevelManager.instance.activeLevel, score, rating);
         }
         else
         {
