@@ -32,12 +32,13 @@ public class RatingUI : MonoBehaviour
             Stars[i].SetActive(true);
         }
     }
-    public void WinCondition(bool win, Levels level)
+    public void WinCondition(bool win, Levels level, int score, int rating)
     {
         if (win)
         {
             Levels nextLevel = level.GetNextLevel();
-
+            LevelManager.instance.LevelCompleted(rating, score);
+            LevelManager.instance.activeLevel = null;
             nextLevelButton.interactable = true;
             nextLevelButton.onClick.AddListener(() =>
             {
